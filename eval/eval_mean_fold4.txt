@@ -1,0 +1,723 @@
+dem_4_19:
+
+min: 18.299999237060547 max: 19.689998626708984
+min: 18.159750720048052 max: 20.016686362783375
+RMSE of consense vote = 1.4259
+Accuracy of consense vote = 0.1766
+Completeness of consense vote = 0.9307
+
+min: 20.653287887573242 max: 22.872066497802734
+RMSE of deep vote = 3.3227
+Accuracy of deep vote = 3.2020
+Completeness of deep vote = 0.0764
+
+dem_8_8:
+
+min: 21.979999542236328 max: 36.64999771118164
+min: 22.38729842978231 max: 38.845690679593105
+RMSE of consense vote = 3.9854
+Accuracy of consense vote = 0.6923
+Completeness of consense vote = 0.5899
+
+min: 25.040929794311523 max: 36.282012939453125
+RMSE of deep vote = 3.8063
+Accuracy of deep vote = 2.8621
+Completeness of deep vote = 0.1494
+
+dem_8_6:
+
+min: 26.6299991607666 max: 34.279998779296875
+min: 26.95686552310024 max: 34.46934984570006
+RMSE of consense vote = 2.7833
+Accuracy of consense vote = 0.5731
+Completeness of consense vote = 0.6301
+
+min: 28.070430755615234 max: 33.31877136230469
+RMSE of deep vote = 2.5552
+Accuracy of deep vote = 1.6831
+Completeness of deep vote = 0.2753
+
+dem_10_27:
+
+min: 19.19999885559082 max: 25.68000030517578
+min: 19.78888978418539 max: 25.42540813277298
+RMSE of consense vote = 2.1320
+Accuracy of consense vote = 0.5893
+Completeness of consense vote = 0.6517
+
+min: 23.173877716064453 max: 27.689434051513672
+RMSE of deep vote = 3.9389
+Accuracy of deep vote = 3.5543
+Completeness of deep vote = 0.0926
+
+dem_10_9:
+
+min: 35.380001068115234 max: 44.209999084472656
+min: 36.76897683093085 max: 46.345233255635904
+RMSE of consense vote = 4.6479
+Accuracy of consense vote = 1.7554
+Completeness of consense vote = 0.2335
+
+min: 34.115577697753906 max: 41.318695068359375
+RMSE of deep vote = 3.7010
+Accuracy of deep vote = 2.0466
+Completeness of deep vote = 0.2498
+
+dem_4_25:
+
+min: 18.75 max: 25.350000381469727
+min: 19.00208433809017 max: 24.52442217668336
+RMSE of consense vote = 1.7469
+Accuracy of consense vote = 0.4527
+Completeness of consense vote = 0.7064
+
+min: 22.644763946533203 max: 26.73487663269043
+RMSE of deep vote = 3.9697
+Accuracy of deep vote = 3.8386
+Completeness of deep vote = 0.0649
+
+dem_5_30:
+
+min: 18.299999237060547 max: 29.599998474121094
+min: 19.003363830923902 max: 32.00496984260367
+RMSE of consense vote = 5.2629
+Accuracy of consense vote = 0.8923
+Completeness of consense vote = 0.5319
+
+min: 22.241863250732422 max: 30.8569393157959
+RMSE of deep vote = 5.8651
+Accuracy of deep vote = 4.2779
+Completeness of deep vote = 0.0600
+
+dem_10_15:
+
+min: 25.90999984741211 max: 36.209999084472656
+min: 26.642069615301864 max: 36.85929682873204
+RMSE of consense vote = 2.6647
+Accuracy of consense vote = 1.0836
+Completeness of consense vote = 0.4659
+
+min: 27.454803466796875 max: 34.92588806152344
+RMSE of deep vote = 2.5304
+Accuracy of deep vote = 1.7052
+Completeness of deep vote = 0.2739
+
+dem_5_28:
+
+min: 18.440000534057617 max: 27.43000030517578
+min: 18.3853661343001 max: 28.120272173008452
+RMSE of consense vote = 7.8151
+Accuracy of consense vote = 0.4191
+Completeness of consense vote = 0.6647
+
+min: 22.10182762145996 max: 30.144184112548828
+RMSE of deep vote = 7.8878
+Accuracy of deep vote = 3.8229
+Completeness of deep vote = 0.0564
+
+dem_8_21:
+
+min: 19.010000228881836 max: 26.010000228881836
+min: 18.80665580949844 max: 25.79104846028912
+RMSE of consense vote = 1.5764
+Accuracy of consense vote = 0.3441
+Completeness of consense vote = 0.8174
+
+min: 22.237380981445312 max: 26.49066162109375
+RMSE of deep vote = 3.6558
+Accuracy of deep vote = 3.4795
+Completeness of deep vote = 0.0622
+
+dem_6_10:
+
+min: 20.989999771118164 max: 25.3799991607666
+min: 21.68658476124699 max: 25.72617083873905
+RMSE of consense vote = 2.1697
+Accuracy of consense vote = 0.4019
+Completeness of consense vote = 0.7762
+
+min: 23.939250946044922 max: 27.65645408630371
+RMSE of deep vote = 3.2738
+Accuracy of deep vote = 2.6639
+Completeness of deep vote = 0.0578
+
+dem_4_33:
+
+min: 18.219999313354492 max: 27.329999923706055
+min: 18.657699021734906 max: 30.076839936507753
+RMSE of consense vote = 3.7101
+Accuracy of consense vote = 0.8622
+Completeness of consense vote = 0.5397
+
+min: 22.757747650146484 max: 29.340627670288086
+RMSE of deep vote = 4.8788
+Accuracy of deep vote = 4.0497
+Completeness of deep vote = 0.0869
+
+dem_5_26:
+
+min: 18.60999870300293 max: 22.19999885559082
+min: 18.821171686506805 max: 21.88165911029858
+RMSE of consense vote = 1.6018
+Accuracy of consense vote = 0.2105
+Completeness of consense vote = 0.7943
+
+min: 21.56914520263672 max: 25.062442779541016
+RMSE of deep vote = 3.5365
+Accuracy of deep vote = 3.3672
+Completeness of deep vote = 0.0883
+
+dem_9_1:
+
+min: 32.79999923706055 max: 39.97999954223633
+min: 33.21869125366211 max: 39.658575428117196
+RMSE of consense vote = 3.7064
+Accuracy of consense vote = 1.9698
+Completeness of consense vote = 0.2920
+
+min: 32.3017578125 max: 37.48710632324219
+RMSE of deep vote = 3.6570
+Accuracy of deep vote = 2.0211
+Completeness of deep vote = 0.2924
+
+dem_6_17:
+
+min: 19.369998931884766 max: 22.90999984741211
+min: 19.9253756481717 max: 22.963697261415135
+RMSE of consense vote = 1.7451
+Accuracy of consense vote = 0.5423
+Completeness of consense vote = 0.8259
+
+min: 22.512113571166992 max: 25.748287200927734
+RMSE of deep vote = 3.9462
+Accuracy of deep vote = 3.7555
+Completeness of deep vote = 0.0431
+
+dem_5_13:
+
+min: 19.03999900817871 max: 25.170000076293945
+min: 20.237338941075034 max: 25.48102720599627
+RMSE of consense vote = 2.5026
+Accuracy of consense vote = 0.8855
+Completeness of consense vote = 0.5564
+
+min: 23.369163513183594 max: 27.96728515625
+RMSE of deep vote = 4.3842
+Accuracy of deep vote = 3.8705
+Completeness of deep vote = 0.0489
+
+dem_6_25:
+
+min: 19.100000381469727 max: 26.489999771118164
+min: 19.340606888305068 max: 26.541108818826256
+RMSE of consense vote = 1.7370
+Accuracy of consense vote = 0.2849
+Completeness of consense vote = 0.8002
+
+min: 22.366270065307617 max: 27.73828887939453
+RMSE of deep vote = 3.5584
+Accuracy of deep vote = 3.2984
+Completeness of deep vote = 0.0963
+
+dem_5_14:
+
+min: 19.020000457763672 max: 25.69999885559082
+min: 20.105436704132266 max: 25.966668526187096
+RMSE of consense vote = 2.5173
+Accuracy of consense vote = 1.0536
+Completeness of consense vote = 0.4729
+
+min: 23.596664428710938 max: 28.03437042236328
+RMSE of deep vote = 4.4862
+Accuracy of deep vote = 4.2029
+Completeness of deep vote = 0.0556
+
+dem_10_31:
+
+min: 18.350000381469727 max: 26.809999465942383
+min: 18.91314845456003 max: 28.9371431947243
+RMSE of consense vote = 3.7733
+Accuracy of consense vote = 1.0051
+Completeness of consense vote = 0.4986
+
+min: 22.838367462158203 max: 28.940303802490234
+RMSE of deep vote = 4.9234
+Accuracy of deep vote = 4.1803
+Completeness of deep vote = 0.0878
+
+dem_8_36:
+
+min: 17.270000457763672 max: 30.92999839782715
+min: 18.523988982351682 max: 36.10434956726549
+RMSE of consense vote = 6.4160
+Accuracy of consense vote = 3.0358
+Completeness of consense vote = 0.2339
+
+min: 22.966964721679688 max: 33.012107849121094
+RMSE of deep vote = 6.3236
+Accuracy of deep vote = 5.1792
+Completeness of deep vote = 0.0795
+
+dem_11_34:
+
+min: 17.28999900817871 max: 24.56999969482422
+min: -59.19280225908207 max: 28.377285880335435
+RMSE of consense vote = 39.8350
+Accuracy of consense vote = 7.1961
+Completeness of consense vote = 0.0384
+
+min: 8.797869682312012 max: 30.234577178955078
+RMSE of deep vote = 8.8139
+Accuracy of deep vote = 6.5629
+Completeness of deep vote = 0.0519
+
+dem_10_21:
+
+min: 19.69999885559082 max: 29.209999084472656
+min: 19.952005152783965 max: 29.49821787094073
+RMSE of consense vote = 2.6784
+Accuracy of consense vote = 0.5677
+Completeness of consense vote = 0.6427
+
+min: 23.644882202148438 max: 28.74348258972168
+RMSE of deep vote = 4.0328
+Accuracy of deep vote = 3.5630
+Completeness of deep vote = 0.0972
+
+dem_3_14:
+
+min: 19.0 max: 25.779998779296875
+min: 20.13631697454733 max: 26.365760056353103
+RMSE of consense vote = 2.4139
+Accuracy of consense vote = 1.2214
+Completeness of consense vote = 0.3677
+
+min: 23.799846649169922 max: 28.179615020751953
+RMSE of deep vote = 4.5384
+Accuracy of deep vote = 4.3655
+Completeness of deep vote = 0.0647
+
+dem_11_22:
+
+min: 19.510000228881836 max: 26.459999084472656
+min: 19.39125161928038 max: 25.705252548011266
+RMSE of consense vote = 2.1527
+Accuracy of consense vote = 0.5510
+Completeness of consense vote = 0.7056
+
+min: 22.734031677246094 max: 27.664371490478516
+RMSE of deep vote = 3.5789
+Accuracy of deep vote = 3.0868
+Completeness of deep vote = 0.1144
+
+dem_5_15:
+
+min: 19.059999465942383 max: 25.81999969482422
+min: 20.286366218573647 max: 26.602147269069214
+RMSE of consense vote = 2.6067
+Accuracy of consense vote = 1.2329
+Completeness of consense vote = 0.3506
+
+min: 23.673583984375 max: 28.37096405029297
+RMSE of deep vote = 4.6066
+Accuracy of deep vote = 4.2676
+Completeness of deep vote = 0.0624
+
+dem_10_30:
+
+min: 18.510000228881836 max: 26.18000030517578
+min: 19.928143704590724 max: 27.269694098592094
+RMSE of consense vote = 3.4009
+Accuracy of consense vote = 1.4014
+Completeness of consense vote = 0.3323
+
+min: 23.653076171875 max: 28.907873153686523
+RMSE of deep vote = 5.0712
+Accuracy of deep vote = 4.5080
+Completeness of deep vote = 0.0627
+
+dem_11_17:
+
+min: 26.459999084472656 max: 34.68000030517578
+min: 28.057214682201764 max: 35.80696502243395
+RMSE of consense vote = 2.8493
+Accuracy of consense vote = 1.1163
+Completeness of consense vote = 0.4530
+
+min: 28.503509521484375 max: 34.08308792114258
+RMSE of deep vote = 2.6614
+Accuracy of deep vote = 1.7263
+Completeness of deep vote = 0.2973
+
+dem_2_14:
+
+min: 19.029998779296875 max: 25.809999465942383
+min: 19.891505640623805 max: 26.386165583565074
+RMSE of consense vote = 2.4176
+Accuracy of consense vote = 0.9943
+Completeness of consense vote = 0.5036
+
+min: 23.059524536132812 max: 27.98120880126953
+RMSE of deep vote = 4.3061
+Accuracy of deep vote = 4.0504
+Completeness of deep vote = 0.0744
+
+dem_11_28:
+
+min: 19.1299991607666 max: 28.479999542236328
+min: 20.528502035238397 max: 31.51905882752144
+RMSE of consense vote = 3.9702
+Accuracy of consense vote = 1.4450
+Completeness of consense vote = 0.2167
+
+min: 24.17146873474121 max: 31.180503845214844
+RMSE of deep vote = 5.2569
+Accuracy of deep vote = 4.3069
+Completeness of deep vote = 0.0989
+
+dem_11_26:
+
+min: 19.729999542236328 max: 26.170000076293945
+min: 20.418484685342325 max: 26.235473167292497
+RMSE of consense vote = 2.1337
+Accuracy of consense vote = 0.7495
+Completeness of consense vote = 0.5909
+
+min: 23.96913719177246 max: 28.15816879272461
+RMSE of deep vote = 4.0463
+Accuracy of deep vote = 3.6356
+Completeness of deep vote = 0.0907
+
+dem_4_36:
+
+min: 18.309999465942383 max: 26.729999542236328
+min: 19.163300839254674 max: 27.89350426356539
+RMSE of consense vote = 5.4204
+Accuracy of consense vote = 2.8550
+Completeness of consense vote = 0.2082
+
+min: 22.70703887939453 max: 28.81453514099121
+RMSE of deep vote = 5.8229
+Accuracy of deep vote = 4.6290
+Completeness of deep vote = 0.1074
+
+dem_9_36:
+
+min: 17.75 max: 23.43000030517578
+min: 19.314496041504114 max: 26.786963552194976
+RMSE of consense vote = 3.4737
+Accuracy of consense vote = 1.2867
+Completeness of consense vote = 0.4176
+
+min: 22.32602310180664 max: 27.408294677734375
+RMSE of deep vote = 4.9044
+Accuracy of deep vote = 4.0233
+Completeness of deep vote = 0.0421
+
+dem_9_20:
+
+min: 19.69999885559082 max: 27.5
+min: 21.023678723738904 max: 27.409075814783485
+RMSE of consense vote = 2.7430
+Accuracy of consense vote = 1.2884
+Completeness of consense vote = 0.1853
+
+min: 24.039264678955078 max: 28.67701530456543
+RMSE of deep vote = 4.3784
+Accuracy of deep vote = 4.1507
+Completeness of deep vote = 0.0656
+
+dem_9_29:
+
+min: 18.65999984741211 max: 25.3799991607666
+min: 18.95812197781422 max: 25.23888962192363
+RMSE of consense vote = 2.3722
+Accuracy of consense vote = 0.6630
+Completeness of consense vote = 0.6109
+
+min: 22.871044158935547 max: 27.42461395263672
+RMSE of deep vote = 4.1659
+Accuracy of deep vote = 3.7797
+Completeness of deep vote = 0.0985
+
+dem_7_11:
+
+min: 20.06999969482422 max: 27.079999923706055
+min: 18.96749870127579 max: 25.486969906372877
+RMSE of consense vote = 2.3951
+Accuracy of consense vote = 1.3549
+Completeness of consense vote = 0.2695
+
+min: 22.845916748046875 max: 27.434032440185547
+RMSE of deep vote = 2.9360
+Accuracy of deep vote = 2.5197
+Completeness of deep vote = 0.1837
+
+dem_3_7:
+
+min: 21.35999870300293 max: 24.69999885559082
+min: 20.475440362046502 max: 25.282989646559905
+RMSE of consense vote = 3.9941
+Accuracy of consense vote = 1.0692
+Completeness of consense vote = 0.4641
+
+min: 22.598377227783203 max: 25.994993209838867
+RMSE of deep vote = 2.5511
+Accuracy of deep vote = 1.6630
+Completeness of deep vote = 0.2864
+
+dem_6_31:
+
+min: 18.10999870300293 max: 28.25
+min: 19.807171968885605 max: 32.29767027536515
+RMSE of consense vote = 5.3668
+Accuracy of consense vote = 1.2193
+Completeness of consense vote = 0.2727
+
+min: 23.226491928100586 max: 31.476341247558594
+RMSE of deep vote = 6.4815
+Accuracy of deep vote = 4.6321
+Completeness of deep vote = 0.0496
+
+dem_3_9:
+
+min: 19.270000457763672 max: 27.170000076293945
+min: 19.489239905787727 max: 27.14322666580147
+RMSE of consense vote = 2.6727
+Accuracy of consense vote = 0.2955
+Completeness of consense vote = 0.8342
+
+min: 22.475143432617188 max: 26.416135787963867
+RMSE of deep vote = 3.5664
+Accuracy of deep vote = 3.2417
+Completeness of deep vote = 0.1563
+
+dem_4_3:
+
+min: 22.119998931884766 max: 30.8799991607666
+min: 23.15587009469614 max: 31.920955806194215
+RMSE of consense vote = 1.2500
+Accuracy of consense vote = 1.0672
+Completeness of consense vote = 0.3968
+
+min: 25.050308227539062 max: 30.661048889160156
+RMSE of deep vote = 2.0083
+Accuracy of deep vote = 1.0621
+Completeness of deep vote = 0.4815
+
+dem_10_2:
+
+min: 35.0 max: 42.12999725341797
+min: 36.679435959924035 max: 43.059745057106866
+RMSE of consense vote = 2.3964
+Accuracy of consense vote = 1.5343
+Completeness of consense vote = 0.2299
+
+min: 34.139259338378906 max: 39.320289611816406
+RMSE of deep vote = 2.6124
+Accuracy of deep vote = 1.6002
+Completeness of deep vote = 0.3478
+
+dem_5_2:
+
+min: 20.229999542236328 max: 26.439998626708984
+min: 19.342401661842263 max: 24.595892051512912
+RMSE of consense vote = 1.8867
+Accuracy of consense vote = 1.1344
+Completeness of consense vote = 0.3612
+
+min: 22.655094146728516 max: 26.386428833007812
+RMSE of deep vote = 2.5173
+Accuracy of deep vote = 2.1922
+Completeness of deep vote = 0.2304
+
+dem_5_25:
+
+min: 19.020000457763672 max: 26.119998931884766
+min: 19.386253601310848 max: 25.82121713074963
+RMSE of consense vote = 3.2633
+Accuracy of consense vote = 0.4568
+Completeness of consense vote = 0.6975
+
+min: 22.85774803161621 max: 27.66798973083496
+RMSE of deep vote = 4.6942
+Accuracy of deep vote = 4.0539
+Completeness of deep vote = 0.0675
+
+dem_9_5:
+
+min: 32.36000061035156 max: 40.64999771118164
+min: 30.37306261062622 max: 40.13067205976214
+RMSE of consense vote = 4.1329
+Accuracy of consense vote = 2.5062
+Completeness of consense vote = 0.2516
+
+min: 31.188072204589844 max: 37.20649719238281
+RMSE of deep vote = 4.0921
+Accuracy of deep vote = 2.3713
+Completeness of deep vote = 0.2445
+
+dem_5_22:
+
+min: 18.34000015258789 max: 19.279998779296875
+min: 18.599666051755854 max: 19.47035316983125
+RMSE of consense vote = 0.6529
+Accuracy of consense vote = 0.2746
+Completeness of consense vote = 0.9278
+
+min: 21.254980087280273 max: 23.064376831054688
+RMSE of deep vote = 3.7155
+Accuracy of deep vote = 3.8344
+Completeness of deep vote = 0.0093
+
+dem_5_17:
+
+min: 21.489999771118164 max: 26.239999771118164
+min: 21.84296386007092 max: 26.780576197139453
+RMSE of consense vote = 1.2033
+Accuracy of consense vote = 0.8543
+Completeness of consense vote = 0.6691
+
+min: 23.696651458740234 max: 27.896034240722656
+RMSE of deep vote = 2.3755
+Accuracy of deep vote = 2.0485
+Completeness of deep vote = 0.1738
+
+dem_6_21:
+
+min: 18.53999900817871 max: 18.850000381469727
+min: 19.766435445553114 max: 20.005421734323416
+RMSE of consense vote = 1.2499
+Accuracy of consense vote = 1.2446
+Completeness of consense vote = 0.0725
+
+min: 21.72563934326172 max: 22.628864288330078
+RMSE of deep vote = 3.5362
+Accuracy of deep vote = 3.5159
+Completeness of deep vote = 0.0002
+
+dem_6_28:
+
+min: 18.6299991607666 max: 24.939998626708984
+min: 18.79100817320325 max: 24.248701670877562
+RMSE of consense vote = 2.2687
+Accuracy of consense vote = 0.5512
+Completeness of consense vote = 0.6561
+
+min: 22.382526397705078 max: 26.88616943359375
+RMSE of deep vote = 3.8786
+Accuracy of deep vote = 3.4222
+Completeness of deep vote = 0.0902
+
+dem_7_22:
+
+min: 18.809999465942383 max: 25.119998931884766
+min: 18.58134441375732 max: 20.362450451123458
+RMSE of consense vote = 3.7485
+Accuracy of consense vote = 0.3701
+Completeness of consense vote = 0.7194
+
+min: 20.06079864501953 max: 22.49855613708496
+RMSE of deep vote = 3.4673
+Accuracy of deep vote = 2.4807
+Completeness of deep vote = 0.1271
+
+dem_8_5:
+
+min: 27.969999313354492 max: 35.81999969482422
+min: 28.776345048302975 max: 35.9836983460301
+RMSE of consense vote = 2.2105
+Accuracy of consense vote = 0.7285
+Completeness of consense vote = 0.5912
+
+min: 29.158714294433594 max: 34.49680709838867
+RMSE of deep vote = 2.2800
+Accuracy of deep vote = 1.5049
+Completeness of deep vote = 0.3366
+
+dem_7_25:
+
+min: 18.803998947143555 max: 25.59000015258789
+min: 18.942774841324574 max: 25.241205745503226
+RMSE of consense vote = 2.0286
+Accuracy of consense vote = 0.3782
+Completeness of consense vote = 0.7307
+
+min: 22.63309097290039 max: 26.834854125976562
+RMSE of deep vote = 3.8021
+Accuracy of deep vote = 3.5439
+Completeness of deep vote = 0.0819
+
+dem_9_28:
+
+min: 18.649999618530273 max: 24.869998931884766
+min: 19.152989693433856 max: 24.209320953340317
+RMSE of consense vote = 2.1831
+Accuracy of consense vote = 0.7335
+Completeness of consense vote = 0.5906
+
+min: 22.942150115966797 max: 26.87609100341797
+RMSE of deep vote = 4.0901
+Accuracy of deep vote = 3.6856
+Completeness of deep vote = 0.0875
+
+dem_5_34:
+
+min: 18.3799991607666 max: 26.69999885559082
+min: 19.635305334631013 max: 27.152407953487156
+RMSE of consense vote = 4.6023
+Accuracy of consense vote = 2.7500
+Completeness of consense vote = 0.1634
+
+min: 23.056278228759766 max: 28.566442489624023
+RMSE of deep vote = 5.4782
+Accuracy of deep vote = 4.5723
+Completeness of deep vote = 0.1109
+
+dem_8_33:
+
+min: 18.459999084472656 max: 27.78999900817871
+min: 19.09610040804002 max: 30.709122133093896
+RMSE of consense vote = 4.4789
+Accuracy of consense vote = 0.9080
+Completeness of consense vote = 0.5226
+
+min: 23.131343841552734 max: 30.364070892333984
+RMSE of deep vote = 5.3733
+Accuracy of deep vote = 4.2094
+Completeness of deep vote = 0.0912
+
+dem_4_28:
+
+min: 18.06999969482422 max: 26.10999870300293
+min: 18.336916110980404 max: 25.883106099446657
+RMSE of consense vote = 3.6330
+Accuracy of consense vote = 0.4851
+Completeness of consense vote = 0.6381
+
+min: 22.349454879760742 max: 28.281063079833984
+RMSE of deep vote = 4.9669
+Accuracy of deep vote = 4.0362
+Completeness of deep vote = 0.0516
+
+dem_6_3:
+
+min: 20.299999237060547 max: 27.01999855041504
+min: 19.394051228231657 max: 25.35352684014916
+RMSE of consense vote = 2.1083
+Accuracy of consense vote = 1.2370
+Completeness of consense vote = 0.3479
+
+min: 23.170875549316406 max: 27.444189071655273
+RMSE of deep vote = 2.8083
+Accuracy of deep vote = 2.3923
+Completeness of deep vote = 0.1974
+
+Final RMSE of consense vote = 3.6384
+Final Accuracy of consense vote = 1.1082
+Final Completeness of consense vote = 0.5099
+
+Final RMSE of deep vote = 4.1385
+Final Accuracy of deep vote = 3.3873
+Final Completeness of deep vote = 0.1278
+
