@@ -1,3 +1,0 @@
-start to load data
-it took 37.66s to load data
-start training

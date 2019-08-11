@@ -33,60 +33,23 @@ def medieanerror(hm_input, hm_gt):
     return error, hm_gt
 
 
-result_path = '../data/'
-data_path = '../data/'
+result_path = '/home/songweig/LockheedMartin/CDSAlign/results/plain/test_epochs/'
+data_path = '../data'
+gt_path = '/home/songweig/LockheedMartin/data/DSM'
 
 fire_palette = misc.imread(os.path.join(data_path, 'fire_palette.png'))[0][:, 0:3]
 confidence_palette = misc.imread(os.path.join(data_path, 'confidence_palette.png'))[0][:, 0:3]
 
-# rotate 180 degree
-gt_data = np.rot90(misc.imread(os.path.join(data_path, 'Explorer.tif')), -1)
-# plt.imshow(getColorMapFromPalette(gt_data, fire_palette))
-# plt.show()
+filenames = os.listdir(result_path)
+for filename in filenames:
+    if not filename.endswith('npy'):
+        continue
+    data = np.load(os.path.join(result_path, filename))
+    color_map = getColorMapFromPalette(data, fire_palette, im_min = 15, im_max = 35)
+    misc.imsave(result_path+'%s.png'%filename[:-4], color_map)
+    if '399' in filename:
+        gt_data = np.load(os.path.join(gt_path, filename[:-8]+'.npy'))
+        color_map = getColorMapFromPalette(gt_data, fire_palette, im_min = 15, im_max = 35)
+        misc.imsave(result_path+'%s_gt_data.png'%filename[:-4], color_map)
 
 
-cand_data = np.load(os.path.join(result_path, 'FF-0.npy'))
-# plt.imshow(getColorMapFromPalette(cand_data[y1:y2, x1:x2], fire_palette))
-# plt.show()
-
-# find the nan mask, x1, y1, x2, x2 1->min 2->max
-mask_ids = np.where(np.logical_not(np.isnan(cand_data)))
-x1, y1, x2, x2 = np.min(mask_ids[1]), np.min(mask_ids[0]), np.max(mask_ids[1]), np.max(mask_ids[0])
-
-medieanerror(cand_data, gt_data)
-
-x1 = 140
-x2 = 1240
-y1 = 148
-y2 = 1331
-
-error_min = 100.0
-
-for x1d in range(50):
-    for x2d in range(50):
-        for y1d in range(50):
-            for y2d in range(50): 
-                error_now = medieanerror(cand_data[y1+y1d:y2-y2d, x1+x1d:x2-x2d], gt_data)
-                if error_now < error_min:
-                    print(y1+y1d, y2-y2d, x1+x1d, x2-x2d, error_now)
-                    error_min = error_now
-                    params = [y1+y1d, y2-y2d, x1+x1d, x2-x2d]
-
-
-x1 = 175
-x2 = 1240
-y1 = 150
-y2 = 1331
-
-plt.imshow(getColorMapFromPalette(cand_data[y1:y2, x1:x2], fire_palette))
-plt.savefig('input.png')
-e, gt_data_resized = medieanerror(cand_data[y1:y2, x1:x2], gt_data)
-plt.imshow(getColorMapFromPalette(gt_data_resized, fire_palette))
-plt.savefig('gt.png')
-
-error_map = cand_data[y1:y2, x1:x2]-gt_data_resized
-error_map[gt_data_resized<0] = 0
-error_palette = np.zeros((255, 3))
-error_palette[:, 0] = np.arange(255)/255.
-plt.imshow(getColorMapFromPalette(np.abs(error_map), error_palette))
-plt.show()

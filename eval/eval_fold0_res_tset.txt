@@ -1,0 +1,2042 @@
+min: 36.74065924109891 max: 45.946329528000206
+min: 36.54989763659735 max: 47.43551805460204
+min: 36.44036867655814 max: 47.13347940007225
+min: 36.4662689730525 max: 47.16892397683114
+min: 36.79373030866373 max: 45.40679075698245
+min: 37.08176522701979 max: 44.346245360560715
+min: 35.380001068115234 max: 44.209999084472656
+min: 36.76897683093085 max: 46.345233255635904
+RMSE of consense vote = 4.6479
+Accuracy of consense vote = 1.7554
+Completeness of consense vote = 0.2335
+
+L1 Error of consense vote = 3.1267
+
+min: 36.77964725084075 max: 45.81815851456486
+RMSE of median fusion = 4.4225
+Accuracy of median fusion = 1.8316
+Completeness of median fusion = 0.2408
+
+L1 Error of median fusion = 3.0858
+
+min: 36.78912553876732 max: 48.02013728798678
+RMSE of kmedian_fusion vote = 5.0802
+Accuracy of kmedian_fusion vote = 1.8589
+Completeness of kmedian_fusion vote = 0.2386
+
+L1 Error of kmedian_fusion vote = 3.3841
+
+min: 34.64973449707031 max: 42.494564056396484
+RMSE of deep vote = 3.6699
+Accuracy of deep vote = 1.4580
+Completeness of deep vote = 0.3801
+
+L1 Error of deep vote = 2.4274
+
+min: 36.4136962890625 max: 44.59498977661133
+RMSE of deep vote with mean pooling = 3.9088
+Accuracy of deep vote with mean pooling = 1.6223
+L1 Error of deep vote with mean pooling = 1.6223
+Completeness of deep vote with mean pooling = 2.6904
+
+min: 20.385360341053456 max: 28.894615659490228
+min: 20.08612120275696 max: 29.005600173026323
+min: 20.485695925463613 max: 29.370801306562498
+min: 20.499643267209954 max: 29.31817164683404
+min: 20.48072921903804 max: 29.557674364186823
+min: 20.23933284264058 max: 28.561641209758818
+min: 18.8799991607666 max: 27.5
+min: 20.375484731254026 max: 28.954056775698792
+RMSE of consense vote = 3.4682
+Accuracy of consense vote = 1.4607
+Completeness of consense vote = 0.2412
+
+L1 Error of consense vote = 2.3942
+
+min: 20.455815592159826 max: 28.935671773118276
+RMSE of median fusion = 3.5003
+Accuracy of median fusion = 1.5463
+Completeness of median fusion = 0.2114
+
+L1 Error of median fusion = 2.5150
+
+min: 20.462425392586738 max: 29.366390073904768
+RMSE of kmedian_fusion vote = 3.9591
+Accuracy of kmedian_fusion vote = 1.5573
+Completeness of kmedian_fusion vote = 0.2097
+
+L1 Error of kmedian_fusion vote = 2.7392
+
+min: 19.855960845947266 max: 27.79222869873047
+RMSE of deep vote = 2.4850
+Accuracy of deep vote = 1.0439
+Completeness of deep vote = 0.4791
+
+L1 Error of deep vote = 1.6724
+
+min: 20.04350471496582 max: 28.195402145385742
+RMSE of deep vote with mean pooling = 3.0942
+Accuracy of deep vote with mean pooling = 1.1970
+L1 Error of deep vote with mean pooling = 1.1970
+Completeness of deep vote with mean pooling = 2.0984
+
+min: 30.725965430494398 max: 37.72176701994613
+min: 30.818915912881494 max: 38.966315895318985
+min: 30.67833312228322 max: 38.11482023727149
+min: 30.713900100439787 max: 38.08549048844725
+min: 30.709078524882596 max: 38.670223996043205
+min: 30.839209722896978 max: 38.50869956899615
+min: 29.19999885559082 max: 37.66999816894531
+min: 30.766242747909445 max: 38.223658704534444
+RMSE of consense vote = 3.2822
+Accuracy of consense vote = 1.3952
+Completeness of consense vote = 0.2703
+
+L1 Error of consense vote = 2.1529
+
+min: 30.856287283124402 max: 37.97016594745219
+RMSE of median fusion = 3.0685
+Accuracy of median fusion = 1.4183
+Completeness of median fusion = 0.2495
+
+L1 Error of median fusion = 2.1593
+
+min: 30.88998737791553 max: 38.859984538594205
+RMSE of kmedian_fusion vote = 3.7485
+Accuracy of kmedian_fusion vote = 1.4080
+Completeness of kmedian_fusion vote = 0.2549
+
+L1 Error of kmedian_fusion vote = 2.3355
+
+min: 29.6087646484375 max: 36.56059265136719
+RMSE of deep vote = 2.8317
+Accuracy of deep vote = 1.0129
+Completeness of deep vote = 0.4942
+
+L1 Error of deep vote = 1.7268
+
+min: 30.6046142578125 max: 37.39076232910156
+RMSE of deep vote with mean pooling = 2.7993
+Accuracy of deep vote with mean pooling = 1.0921
+L1 Error of deep vote with mean pooling = 1.0921
+Completeness of deep vote with mean pooling = 1.8387
+
+min: 19.73589079733938 max: 25.4415151309222
+min: 19.80357885081321 max: 25.786591964773834
+min: 19.738778361305595 max: 25.691152341850103
+min: 19.73813580069691 max: 25.716545686436195
+min: 19.632139448076487 max: 25.701008839532733
+min: 19.62516515655443 max: 25.349865979980677
+min: 19.19999885559082 max: 25.68000030517578
+min: 19.78888978418539 max: 25.42540813277298
+RMSE of consense vote = 2.1320
+Accuracy of consense vote = 0.5893
+Completeness of consense vote = 0.6517
+
+L1 Error of consense vote = 1.2323
+
+min: 19.79910253432269 max: 25.410840698494574
+RMSE of median fusion = 2.0757
+Accuracy of median fusion = 0.6009
+Completeness of median fusion = 0.6284
+
+L1 Error of median fusion = 1.2432
+
+min: 19.799963524891062 max: 25.716483456796656
+RMSE of kmedian_fusion vote = 2.2137
+Accuracy of kmedian_fusion vote = 0.6015
+Completeness of kmedian_fusion vote = 0.6277
+
+L1 Error of kmedian_fusion vote = 1.2915
+
+min: 19.11163330078125 max: 24.4027042388916
+RMSE of deep vote = 1.8350
+Accuracy of deep vote = 0.6517
+Completeness of deep vote = 0.6345
+
+L1 Error of deep vote = 1.1130
+
+min: 19.311199188232422 max: 24.782987594604492
+RMSE of deep vote with mean pooling = 1.8789
+Accuracy of deep vote with mean pooling = 0.7127
+L1 Error of deep vote with mean pooling = 0.7127
+Completeness of deep vote with mean pooling = 1.2160
+
+min: 19.61762998998165 max: 27.12027319893241
+min: 19.628786781802773 max: 27.15793642308563
+min: 19.784219477325678 max: 27.12785883899778
+min: 19.79318588320166 max: 27.17859279892097
+min: 19.37436639936641 max: 26.948326135519892
+min: 19.59795125434175 max: 27.033012009691447
+min: 19.239999771118164 max: 27.059999465942383
+min: 19.705633313400234 max: 27.0220932291772
+RMSE of consense vote = 2.3185
+Accuracy of consense vote = 0.5041
+Completeness of consense vote = 0.6856
+
+L1 Error of consense vote = 1.3097
+
+min: 19.721385556971654 max: 27.018843874723338
+RMSE of median fusion = 2.3400
+Accuracy of median fusion = 0.5563
+Completeness of median fusion = 0.6352
+
+L1 Error of median fusion = 1.3876
+
+min: 19.72492806147784 max: 27.21702610903109
+RMSE of kmedian_fusion vote = 2.7845
+Accuracy of kmedian_fusion vote = 0.5484
+Completeness of kmedian_fusion vote = 0.6379
+
+L1 Error of kmedian_fusion vote = 1.4742
+
+min: 19.213232040405273 max: 26.222320556640625
+RMSE of deep vote = 1.8790
+Accuracy of deep vote = 0.6183
+Completeness of deep vote = 0.6478
+
+L1 Error of deep vote = 1.1313
+
+min: 19.241567611694336 max: 26.37143898010254
+RMSE of deep vote with mean pooling = 2.1897
+Accuracy of deep vote with mean pooling = 0.7162
+L1 Error of deep vote with mean pooling = 0.7162
+Completeness of deep vote with mean pooling = 1.3774
+
+min: 18.46619684668258 max: 19.201107078697532
+min: 18.61356266459282 max: 19.554015284979897
+min: 18.728733451571316 max: 19.514313185121864
+min: 18.712364298912387 max: 19.502034111879766
+min: 18.81223257817328 max: 19.361543872393668
+min: 18.835356941446662 max: 19.446063535753638
+min: 18.56999969482422 max: 19.270000457763672
+min: 18.719502365915893 max: 19.446692660213504
+RMSE of consense vote = 0.2196
+Accuracy of consense vote = 0.1672
+Completeness of consense vote = 0.9981
+
+L1 Error of consense vote = 0.1745
+
+min: 18.737426550748445 max: 19.463314421474934
+RMSE of median fusion = 0.2459
+Accuracy of median fusion = 0.1715
+Completeness of median fusion = 0.9979
+
+L1 Error of median fusion = 0.1843
+
+min: 18.737426550748445 max: 19.46432652527848
+RMSE of kmedian_fusion vote = 0.7621
+Accuracy of kmedian_fusion vote = 0.1716
+Completeness of kmedian_fusion vote = 0.9972
+
+L1 Error of kmedian_fusion vote = 0.2034
+
+min: 18.438098907470703 max: 19.171354293823242
+RMSE of deep vote = 0.4635
+Accuracy of deep vote = 0.1099
+Completeness of deep vote = 0.9815
+
+L1 Error of deep vote = 0.1860
+
+not good!
+
+min: 18.17415428161621 max: 18.95322608947754
+RMSE of deep vote with mean pooling = 0.7186
+Accuracy of deep vote with mean pooling = 0.3725
+L1 Error of deep vote with mean pooling = 0.3725
+Completeness of deep vote with mean pooling = 0.4392
+
+min: 19.0320849083364 max: 26.65081223193556
+min: 18.88114429327349 max: 26.875916892662644
+min: 18.939949344483644 max: 26.852390380681932
+min: 18.950618310521044 max: 26.883572643312313
+min: 18.96549122594297 max: 26.49680461641401
+min: 19.05286155641079 max: 26.454280324280262
+min: 18.600000381469727 max: 26.78999900817871
+min: 19.09311205359575 max: 26.72932601000913
+RMSE of consense vote = 2.5591
+Accuracy of consense vote = 0.6910
+Completeness of consense vote = 0.6002
+
+L1 Error of consense vote = 1.5438
+
+min: 19.062252331602696 max: 26.603919367669214
+RMSE of median fusion = 2.4861
+Accuracy of median fusion = 0.7237
+Completeness of median fusion = 0.5723
+
+L1 Error of median fusion = 1.5579
+
+min: 19.065983556496665 max: 27.099267511867673
+RMSE of kmedian_fusion vote = 2.6074
+Accuracy of kmedian_fusion vote = 0.6948
+Completeness of kmedian_fusion vote = 0.5808
+
+L1 Error of kmedian_fusion vote = 1.5902
+
+min: 18.609111785888672 max: 25.38619041442871
+RMSE of deep vote = 2.1197
+Accuracy of deep vote = 0.7817
+Completeness of deep vote = 0.5734
+
+L1 Error of deep vote = 1.3701
+
+min: 18.602766036987305 max: 25.637136459350586
+RMSE of deep vote with mean pooling = 2.3188
+Accuracy of deep vote with mean pooling = 0.8986
+L1 Error of deep vote with mean pooling = 0.8986
+Completeness of deep vote with mean pooling = 1.5567
+
+min: 18.69362786738202 max: 22.084449987392873
+min: 18.703325804322958 max: 22.518413210980768
+min: 18.70164378453046 max: 22.550210442161188
+min: 18.68788648582995 max: 22.497139948420227
+min: 18.687237522176776 max: 21.77860913154048
+min: 19.109428269345244 max: 21.671917436201056
+min: 18.28999900817871 max: 21.850000381469727
+min: 18.72008275426345 max: 21.813232479813713
+RMSE of consense vote = 1.4663
+Accuracy of consense vote = 0.3471
+Completeness of consense vote = 0.8258
+
+L1 Error of consense vote = 0.7691
+
+min: 18.76574505516328 max: 21.983045887202024
+RMSE of median fusion = 1.4393
+Accuracy of median fusion = 0.3573
+Completeness of median fusion = 0.8062
+
+L1 Error of median fusion = 0.7916
+
+min: 18.76954829832539 max: 22.103255381303217
+RMSE of kmedian_fusion vote = 1.6038
+Accuracy of kmedian_fusion vote = 0.3575
+Completeness of kmedian_fusion vote = 0.8052
+
+L1 Error of kmedian_fusion vote = 0.8383
+
+min: 18.359176635742188 max: 21.566387176513672
+RMSE of deep vote = 1.1408
+Accuracy of deep vote = 0.2523
+Completeness of deep vote = 0.8299
+
+L1 Error of deep vote = 0.6136
+
+min: 18.31407928466797 max: 21.550928115844727
+RMSE of deep vote with mean pooling = 1.3271
+Accuracy of deep vote with mean pooling = 0.3770
+L1 Error of deep vote with mean pooling = 0.3770
+Completeness of deep vote with mean pooling = 0.7656
+
+min: 18.447748526465148 max: 29.27810185169801
+min: 18.124261781573296 max: 29.778107542311773
+min: 18.05069588823244 max: 29.25486790280168
+min: 18.046212843153626 max: 29.19680923083797
+min: 18.327664921967894 max: 26.896204160813205
+min: 18.64041057229042 max: 27.70763893611729
+min: 18.440000534057617 max: 27.43000030517578
+min: 18.3853661343001 max: 28.120272173008452
+RMSE of consense vote = 7.8151
+Accuracy of consense vote = 0.4191
+Completeness of consense vote = 0.6647
+
+L1 Error of consense vote = 2.7455
+
+min: 18.319463916821405 max: 28.471855427914612
+RMSE of median fusion = 7.2181
+Accuracy of median fusion = 0.4492
+Completeness of median fusion = 0.6335
+
+L1 Error of median fusion = 2.8026
+
+min: 18.348418899799988 max: 30.31205788169367
+RMSE of kmedian_fusion vote = 8.7455
+Accuracy of kmedian_fusion vote = 0.4560
+Completeness of kmedian_fusion vote = 0.6222
+
+L1 Error of kmedian_fusion vote = 3.4041
+
+min: 17.940256118774414 max: 25.922950744628906
+RMSE of deep vote = 6.9714
+Accuracy of deep vote = 0.6407
+Completeness of deep vote = 0.5945
+
+L1 Error of deep vote = 2.8343
+
+min: 17.793272018432617 max: 28.216154098510742
+RMSE of deep vote with mean pooling = 7.1318
+Accuracy of deep vote with mean pooling = 0.8312
+L1 Error of deep vote with mean pooling = 0.8312
+Completeness of deep vote with mean pooling = 3.2278
+
+min: 20.419010534882545 max: 25.710905356089704
+min: 20.257990885991603 max: 26.12351358309388
+min: 20.16189591959119 max: 25.870171006768942
+min: 20.222105156630278 max: 25.905452226288617
+min: 19.963835117098625 max: 25.23630711498552
+min: 19.89723910965646 max: 25.01394535616661
+min: 19.03999900817871 max: 25.170000076293945
+min: 20.237338941075034 max: 25.48102720599627
+RMSE of consense vote = 2.5026
+Accuracy of consense vote = 0.8855
+Completeness of consense vote = 0.5564
+
+L1 Error of consense vote = 1.5723
+
+min: 20.255680901386462 max: 25.549154225271195
+RMSE of median fusion = 2.4380
+Accuracy of median fusion = 0.9023
+Completeness of median fusion = 0.5520
+
+L1 Error of median fusion = 1.5846
+
+min: 20.26171351915011 max: 26.314867089813916
+RMSE of kmedian_fusion vote = 2.6831
+Accuracy of kmedian_fusion vote = 0.9026
+Completeness of kmedian_fusion vote = 0.5516
+
+L1 Error of kmedian_fusion vote = 1.6761
+
+min: 19.4636173248291 max: 24.04271125793457
+RMSE of deep vote = 2.0357
+Accuracy of deep vote = 0.6428
+Completeness of deep vote = 0.6219
+
+L1 Error of deep vote = 1.2378
+
+min: 19.87242889404297 max: 24.868896484375
+RMSE of deep vote with mean pooling = 2.1936
+Accuracy of deep vote with mean pooling = 0.5669
+L1 Error of deep vote with mean pooling = 0.5669
+Completeness of deep vote with mean pooling = 1.2978
+
+min: 18.06392899809145 max: 26.470541181990136
+min: 18.154293105006218 max: 26.823894067528716
+min: 18.277001190930605 max: 26.814377885311842
+min: 18.2715608458966 max: 26.869393330067396
+min: 18.32751868572086 max: 26.47905334364623
+min: 18.213940834471334 max: 26.176041040414322
+min: 18.209999084472656 max: 26.43000030517578
+min: 18.173496309906213 max: 26.59880906443567
+RMSE of consense vote = 3.5179
+Accuracy of consense vote = 0.5056
+Completeness of consense vote = 0.6289
+
+L1 Error of consense vote = 1.8193
+
+min: 18.235949664531894 max: 26.32055656759379
+RMSE of median fusion = 3.3088
+Accuracy of median fusion = 0.5653
+Completeness of median fusion = 0.5910
+
+L1 Error of median fusion = 1.8144
+
+min: 18.23752719194939 max: 27.576116191231275
+RMSE of kmedian_fusion vote = 3.6095
+Accuracy of kmedian_fusion vote = 0.5643
+Completeness of kmedian_fusion vote = 0.5901
+
+L1 Error of kmedian_fusion vote = 1.9609
+
+min: 17.967193603515625 max: 24.625720977783203
+RMSE of deep vote = 2.9716
+Accuracy of deep vote = 0.5452
+Completeness of deep vote = 0.6126
+
+L1 Error of deep vote = 1.5970
+
+min: 17.695064544677734 max: 25.662389755249023
+RMSE of deep vote with mean pooling = 3.0669
+Accuracy of deep vote with mean pooling = 0.6835
+L1 Error of deep vote with mean pooling = 0.6835
+Completeness of deep vote with mean pooling = 1.8352
+
+min: 28.590310202135395 max: 37.892095879185945
+min: 28.642215838590104 max: 37.79731763613357
+min: 28.574047166854143 max: 37.665207909730576
+min: 28.584345494738848 max: 37.63936440028909
+min: 28.657899275654927 max: 37.901865212479606
+min: 28.49794885455895 max: 37.661124518469755
+min: 27.75 max: 37.25
+min: 28.588422925842348 max: 37.67864054905675
+RMSE of consense vote = 2.7291
+Accuracy of consense vote = 0.8964
+Completeness of consense vote = 0.5785
+
+L1 Error of consense vote = 1.6527
+
+min: 28.690260544535704 max: 37.668218421648376
+RMSE of median fusion = 2.6969
+Accuracy of median fusion = 0.8849
+Completeness of median fusion = 0.5827
+
+L1 Error of median fusion = 1.6780
+
+min: 28.703742543745832 max: 37.81259252453662
+RMSE of kmedian_fusion vote = 2.9155
+Accuracy of kmedian_fusion vote = 0.8847
+Completeness of kmedian_fusion vote = 0.5827
+
+L1 Error of kmedian_fusion vote = 1.7538
+
+min: 27.640188217163086 max: 37.26426315307617
+RMSE of deep vote = 2.7029
+Accuracy of deep vote = 0.6372
+Completeness of deep vote = 0.6452
+
+L1 Error of deep vote = 1.4124
+
+min: 28.318023681640625 max: 37.185546875
+RMSE of deep vote with mean pooling = 2.4772
+Accuracy of deep vote with mean pooling = 0.5189
+L1 Error of deep vote with mean pooling = 0.5189
+Completeness of deep vote with mean pooling = 1.3683
+
+min: 18.933684415416792 max: 24.492432784521952
+min: 18.78791873343289 max: 24.6589896120131
+min: 18.848059239874903 max: 24.5553027165782
+min: 18.81485377061957 max: 24.562495348004937
+min: 18.85824758000672 max: 24.293336108326912
+min: 19.058579576046515 max: 24.431420428212732
+min: 18.479999542236328 max: 24.829999923706055
+min: 18.963055406860235 max: 24.277962990860278
+RMSE of consense vote = 2.4239
+Accuracy of consense vote = 0.6922
+Completeness of consense vote = 0.6001
+
+L1 Error of consense vote = 1.4575
+
+min: 18.955205016284406 max: 24.269158413808327
+RMSE of median fusion = 2.3710
+Accuracy of median fusion = 0.7409
+Completeness of median fusion = 0.5677
+
+L1 Error of median fusion = 1.4820
+
+min: 18.960270575868584 max: 24.581002936388053
+RMSE of kmedian_fusion vote = 2.5128
+Accuracy of kmedian_fusion vote = 0.7452
+Completeness of kmedian_fusion vote = 0.5658
+
+L1 Error of kmedian_fusion vote = 1.5469
+
+min: 18.44025993347168 max: 23.279769897460938
+RMSE of deep vote = 2.1293
+Accuracy of deep vote = 0.7161
+Completeness of deep vote = 0.6009
+
+L1 Error of deep vote = 1.2689
+
+min: 18.520444869995117 max: 23.584768295288086
+RMSE of deep vote with mean pooling = 2.2158
+Accuracy of deep vote with mean pooling = 0.8497
+L1 Error of deep vote with mean pooling = 0.8497
+Completeness of deep vote with mean pooling = 1.4381
+
+min: 19.88621408647547 max: 25.486024953114487
+min: 19.712412326596677 max: 25.562292939517647
+min: 19.79302164237015 max: 25.60145282256417
+min: 19.69204999909539 max: 25.50211163485536
+min: 19.657765507392185 max: 25.493164785366105
+min: 19.860292722238228 max: 25.386511041549966
+min: 18.85999870300293 max: 25.139999389648438
+min: 19.861458940039018 max: 25.27229405924993
+RMSE of consense vote = 2.3468
+Accuracy of consense vote = 1.1355
+Completeness of consense vote = 0.4492
+
+L1 Error of consense vote = 1.6704
+
+min: 19.81056637010128 max: 25.256882316432893
+RMSE of median fusion = 2.3489
+Accuracy of median fusion = 1.1330
+Completeness of median fusion = 0.4541
+
+L1 Error of median fusion = 1.7065
+
+min: 19.814088252722286 max: 25.518331801829238
+RMSE of kmedian_fusion vote = 2.5382
+Accuracy of kmedian_fusion vote = 1.1394
+Completeness of kmedian_fusion vote = 0.4523
+
+L1 Error of kmedian_fusion vote = 1.7839
+
+min: 19.217647552490234 max: 24.250680923461914
+RMSE of deep vote = 1.7954
+Accuracy of deep vote = 0.7118
+Completeness of deep vote = 0.6118
+
+L1 Error of deep vote = 1.1834
+
+min: 19.35645866394043 max: 24.593917846679688
+RMSE of deep vote with mean pooling = 2.0506
+Accuracy of deep vote with mean pooling = 0.8993
+L1 Error of deep vote with mean pooling = 0.8993
+Completeness of deep vote with mean pooling = 1.4085
+
+min: 18.068539277597992 max: 19.30236537129583
+min: 18.006630175281316 max: 19.16483300098023
+min: 18.090478867758065 max: 19.248593080236198
+min: 17.990025187144056 max: 19.174126726808026
+min: 18.11637252010405 max: 19.107159052548706
+min: 18.17795534145794 max: 18.90233111374787
+min: 18.459999084472656 max: 19.40999984741211
+min: 18.158673339431516 max: 19.001654967872884
+RMSE of consense vote = 1.5653
+Accuracy of consense vote = 0.3637
+Completeness of consense vote = 0.8643
+
+L1 Error of consense vote = 0.7047
+
+min: 18.13155178591161 max: 19.077734153019264
+RMSE of median fusion = 1.5671
+Accuracy of median fusion = 0.3647
+Completeness of median fusion = 0.8631
+
+L1 Error of median fusion = 0.7068
+
+min: 18.13155178591161 max: 19.077734153019264
+RMSE of kmedian_fusion vote = 1.5671
+Accuracy of kmedian_fusion vote = 0.3647
+Completeness of kmedian_fusion vote = 0.8631
+
+L1 Error of kmedian_fusion vote = 0.7068
+
+min: 17.868623733520508 max: 18.719812393188477
+RMSE of deep vote = 1.7388
+Accuracy of deep vote = 0.5605
+Completeness of deep vote = 0.8043
+
+L1 Error of deep vote = 0.9015
+
+not good!
+
+min: 17.64712905883789 max: 18.49166488647461
+RMSE of deep vote with mean pooling = 1.7963
+Accuracy of deep vote with mean pooling = 0.7919
+L1 Error of deep vote with mean pooling = 0.7919
+Completeness of deep vote with mean pooling = 1.0756
+
+min: 19.2499195903074 max: 25.877039052313194
+min: 19.321629313006998 max: 25.938977677375078
+min: 19.31762389417623 max: 25.79966125123088
+min: 19.34940557826 max: 25.806222106562927
+min: 19.310364982113242 max: 25.800618692301214
+min: 19.307630234397948 max: 25.867535145953298
+min: 19.510000228881836 max: 26.459999084472656
+min: 19.39125161928038 max: 25.705252548011266
+RMSE of consense vote = 2.1527
+Accuracy of consense vote = 0.5510
+Completeness of consense vote = 0.7056
+
+L1 Error of consense vote = 1.2018
+
+min: 19.383803890775315 max: 25.661928574790778
+RMSE of median fusion = 2.1022
+Accuracy of median fusion = 0.5554
+Completeness of median fusion = 0.6824
+
+L1 Error of median fusion = 1.2201
+
+min: 19.384669343475252 max: 26.0768308355861
+RMSE of kmedian_fusion vote = 2.2763
+Accuracy of kmedian_fusion vote = 0.5556
+Completeness of kmedian_fusion vote = 0.6824
+
+L1 Error of kmedian_fusion vote = 1.2710
+
+min: 18.734193801879883 max: 24.603017807006836
+RMSE of deep vote = 2.0933
+Accuracy of deep vote = 0.8684
+Completeness of deep vote = 0.5841
+
+L1 Error of deep vote = 1.3872
+
+min: 18.888017654418945 max: 25.025421142578125
+RMSE of deep vote with mean pooling = 2.1816
+Accuracy of deep vote with mean pooling = 0.9841
+L1 Error of deep vote with mean pooling = 0.9841
+Completeness of deep vote with mean pooling = 1.4755
+
+min: 20.78572923565904 max: 27.724050938772656
+min: 20.61383325047791 max: 27.856306328438222
+min: 20.673937329556793 max: 27.842289466876537
+min: 20.703013674821705 max: 27.824192597530782
+min: 20.712054543197155 max: 27.536035556346178
+min: 20.729845281224698 max: 27.19085776247084
+min: 19.279998779296875 max: 26.28999900817871
+min: 20.74514398854599 max: 27.649619979069755
+RMSE of consense vote = 2.7049
+Accuracy of consense vote = 1.5019
+Completeness of consense vote = 0.2141
+
+L1 Error of consense vote = 2.0332
+
+min: 20.7644948210412 max: 27.493407564703375
+RMSE of median fusion = 2.6986
+Accuracy of median fusion = 1.4902
+Completeness of median fusion = 0.2075
+
+L1 Error of median fusion = 2.0742
+
+min: 20.767477636691183 max: 27.898398575993873
+RMSE of kmedian_fusion vote = 2.9842
+Accuracy of kmedian_fusion vote = 1.5001
+Completeness of kmedian_fusion vote = 0.2044
+
+L1 Error of kmedian_fusion vote = 2.2208
+
+min: 20.0792293548584 max: 25.59906578063965
+RMSE of deep vote = 2.1963
+Accuracy of deep vote = 1.1145
+Completeness of deep vote = 0.4356
+
+L1 Error of deep vote = 1.5923
+
+min: 20.28558921813965 max: 26.386512756347656
+RMSE of deep vote with mean pooling = 2.3169
+Accuracy of deep vote with mean pooling = 1.1037
+L1 Error of deep vote with mean pooling = 1.1037
+Completeness of deep vote with mean pooling = 1.6899
+
+min: 18.21519550269245 max: 34.841044830230615
+min: 18.280948015861213 max: 36.7131901162987
+min: 18.483050485514106 max: 36.6381999835372
+min: 18.493304980918765 max: 36.61119306118538
+min: 18.163880203510864 max: 29.210711163128956
+min: 18.347017428837717 max: 28.548062896355987
+min: 18.31999969482422 max: 32.77000045776367
+min: 18.275115392064933 max: 36.09868959557339
+RMSE of consense vote = 6.0357
+Accuracy of consense vote = 0.8078
+Completeness of consense vote = 0.5302
+
+L1 Error of consense vote = 3.3644
+
+min: 18.38595973334054 max: 35.01960565386228
+RMSE of median fusion = 5.6417
+Accuracy of median fusion = 1.0047
+Completeness of median fusion = 0.4994
+
+L1 Error of median fusion = 3.2988
+
+min: 18.391891138198595 max: 36.63343832457217
+RMSE of kmedian_fusion vote = 6.5794
+Accuracy of kmedian_fusion vote = 1.0537
+Completeness of kmedian_fusion vote = 0.4938
+
+L1 Error of kmedian_fusion vote = 3.8929
+
+min: 18.02968406677246 max: 29.69493293762207
+RMSE of deep vote = 4.9047
+Accuracy of deep vote = 1.3372
+Completeness of deep vote = 0.4581
+
+L1 Error of deep vote = 3.0226
+
+min: 17.8485164642334 max: 31.983430862426758
+RMSE of deep vote with mean pooling = 5.3021
+Accuracy of deep vote with mean pooling = 1.4092
+L1 Error of deep vote with mean pooling = 1.4092
+Completeness of deep vote with mean pooling = 3.3499
+
+min: 19.2505759239692 max: 24.972646997918538
+min: 19.49386088683167 max: 25.091763410471927
+min: 19.18909001617942 max: 24.598785726700612
+min: 19.20023231297834 max: 24.929088916593326
+min: 19.378038055026053 max: 24.596788859688758
+min: 19.27534042671323 max: 24.67404834041372
+min: 20.229999542236328 max: 26.439998626708984
+min: 19.342401661842263 max: 24.595892051512912
+RMSE of consense vote = 1.8867
+Accuracy of consense vote = 1.1344
+Completeness of consense vote = 0.3612
+
+L1 Error of consense vote = 1.4221
+
+min: 19.335026713882662 max: 24.573964087000434
+RMSE of median fusion = 1.8315
+Accuracy of median fusion = 1.1508
+Completeness of median fusion = 0.3513
+
+L1 Error of median fusion = 1.4079
+
+min: 19.335501632491674 max: 24.675929792703062
+RMSE of kmedian_fusion vote = 1.8584
+Accuracy of kmedian_fusion vote = 1.1517
+Completeness of kmedian_fusion vote = 0.3502
+
+L1 Error of kmedian_fusion vote = 1.4193
+
+min: 18.95136260986328 max: 24.08367919921875
+RMSE of deep vote = 2.1027
+Accuracy of deep vote = 1.4838
+Completeness of deep vote = 0.2135
+
+L1 Error of deep vote = 1.7209
+
+not good!
+
+min: 18.852346420288086 max: 23.97620964050293
+RMSE of deep vote with mean pooling = 2.1358
+Accuracy of deep vote with mean pooling = 1.6244
+L1 Error of deep vote with mean pooling = 1.6244
+Completeness of deep vote with mean pooling = 1.7716
+
+min: 19.95457882033879 max: 29.18754729600841
+min: 20.088800653551914 max: 29.19386722555746
+min: 20.06274352222681 max: 29.150178102776408
+min: 20.094829105577006 max: 29.183537620856
+min: 20.115350859580797 max: 28.88901790917502
+min: 20.13681723208477 max: 28.921605367523927
+min: 17.850000381469727 max: 28.549999237060547
+min: 20.118023981407415 max: 28.915150521263797
+RMSE of consense vote = 3.8624
+Accuracy of consense vote = 0.9722
+Completeness of consense vote = 0.5057
+
+L1 Error of consense vote = 2.3529
+
+min: 20.107281445831433 max: 28.957713792189278
+RMSE of median fusion = 3.8302
+Accuracy of median fusion = 1.1457
+Completeness of median fusion = 0.4759
+
+L1 Error of median fusion = 2.3939
+
+min: 20.11886287486361 max: 29.198791806822534
+RMSE of kmedian_fusion vote = 4.1755
+Accuracy of kmedian_fusion vote = 1.1646
+Completeness of kmedian_fusion vote = 0.4731
+
+L1 Error of kmedian_fusion vote = 2.5656
+
+min: 19.485801696777344 max: 28.04262924194336
+RMSE of deep vote = 3.4351
+Accuracy of deep vote = 1.1185
+Completeness of deep vote = 0.4715
+
+L1 Error of deep vote = 2.1723
+
+min: 19.608442306518555 max: 28.301794052124023
+RMSE of deep vote with mean pooling = 3.6287
+Accuracy of deep vote with mean pooling = 1.1558
+L1 Error of deep vote with mean pooling = 1.1558
+Completeness of deep vote with mean pooling = 2.2851
+
+min: 19.13063594287572 max: 31.84128683859793
+min: 18.95780030824244 max: 31.726252953521907
+min: 18.879285286025453 max: 31.52461788384244
+min: 18.883809942778974 max: 31.398034638519242
+min: 19.02751083439216 max: 32.18114772206172
+min: 18.638537642529506 max: 29.907422053611178
+min: 18.44999885559082 max: 27.85999870300293
+min: 19.06689053611764 max: 31.328999061138894
+RMSE of consense vote = 4.3155
+Accuracy of consense vote = 1.0514
+Completeness of consense vote = 0.4876
+
+L1 Error of consense vote = 2.5240
+
+min: 19.00286822976131 max: 31.06712163636872
+RMSE of median fusion = 4.2041
+Accuracy of median fusion = 1.1951
+Completeness of median fusion = 0.4615
+
+L1 Error of median fusion = 2.5326
+
+min: 19.014176105861008 max: 32.310828155166995
+RMSE of kmedian_fusion vote = 4.6550
+Accuracy of kmedian_fusion vote = 1.2194
+Completeness of kmedian_fusion vote = 0.4580
+
+L1 Error of kmedian_fusion vote = 2.7821
+
+min: 18.37213134765625 max: 28.624568939208984
+RMSE of deep vote = 3.2869
+Accuracy of deep vote = 1.0889
+Completeness of deep vote = 0.4740
+
+L1 Error of deep vote = 2.0411
+
+min: 18.63453483581543 max: 30.471818923950195
+RMSE of deep vote with mean pooling = 3.9387
+Accuracy of deep vote with mean pooling = 1.2717
+L1 Error of deep vote with mean pooling = 1.2717
+Completeness of deep vote with mean pooling = 2.4509
+
+min: 18.505163312423974 max: 24.92041019909084
+min: 18.552868434405003 max: 24.82111530116764
+min: 18.71195574307017 max: 24.854789382937774
+min: 18.662460532970726 max: 24.890926090689998
+min: 18.959637409076095 max: 22.856332289986312
+min: 18.959954236634076 max: 22.59642159473151
+min: 18.65999984741211 max: 23.829999923706055
+min: 18.74221062604746 max: 24.487856214742678
+RMSE of consense vote = 1.6793
+Accuracy of consense vote = 0.3591
+Completeness of consense vote = 0.7942
+
+L1 Error of consense vote = 0.8589
+
+min: 18.724370262665413 max: 24.41211239574477
+RMSE of median fusion = 1.6606
+Accuracy of median fusion = 0.3709
+Completeness of median fusion = 0.7811
+
+L1 Error of median fusion = 0.8761
+
+min: 18.72442525671795 max: 24.615752058308594
+RMSE of kmedian_fusion vote = 1.7578
+Accuracy of kmedian_fusion vote = 0.3711
+Completeness of kmedian_fusion vote = 0.7802
+
+L1 Error of kmedian_fusion vote = 0.9046
+
+min: 18.48821258544922 max: 23.462696075439453
+RMSE of deep vote = 1.4072
+Accuracy of deep vote = 0.3173
+Completeness of deep vote = 0.7836
+
+L1 Error of deep vote = 0.7730
+
+min: 18.268661499023438 max: 23.532968521118164
+RMSE of deep vote with mean pooling = 1.5454
+Accuracy of deep vote with mean pooling = 0.4953
+L1 Error of deep vote with mean pooling = 0.4953
+Completeness of deep vote with mean pooling = 0.9225
+
+min: 20.856351546244696 max: 24.18620799970813
+min: 20.73172671115026 max: 24.52076655579731
+min: 20.815195662435144 max: 24.638308711349964
+min: 20.82409522496164 max: 24.66431731171906
+min: 20.622731486606853 max: 23.34407712453182
+min: 20.76077056233771 max: 23.329679254675284
+min: 20.34000015258789 max: 24.010000228881836
+min: 20.83608950743203 max: 24.138250095293643
+RMSE of consense vote = 1.5790
+Accuracy of consense vote = 0.4384
+Completeness of consense vote = 0.7872
+
+L1 Error of consense vote = 0.9019
+
+min: 20.83575369710637 max: 24.21135094051715
+RMSE of median fusion = 1.5736
+Accuracy of median fusion = 0.4537
+Completeness of median fusion = 0.7585
+
+L1 Error of median fusion = 0.9342
+
+min: 20.836659351286166 max: 24.316424768201873
+RMSE of kmedian_fusion vote = 1.6700
+Accuracy of kmedian_fusion vote = 0.4521
+Completeness of kmedian_fusion vote = 0.7602
+
+L1 Error of kmedian_fusion vote = 0.9532
+
+min: 20.422266006469727 max: 23.073320388793945
+RMSE of deep vote = 1.4145
+Accuracy of deep vote = 0.2197
+Completeness of deep vote = 0.8127
+
+L1 Error of deep vote = 0.6718
+
+min: 20.317262649536133 max: 23.485939025878906
+RMSE of deep vote with mean pooling = 1.6235
+Accuracy of deep vote with mean pooling = 0.2528
+L1 Error of deep vote with mean pooling = 0.2528
+Completeness of deep vote with mean pooling = 0.7807
+
+min: 20.102185849966283 max: 32.74766205673086
+min: 19.707840157865682 max: 24.98541299272994
+min: 20.05989519645015 max: 26.861618765616065
+min: 20.071082492358983 max: 25.19232841907069
+min: 20.43232607189566 max: 26.61426808172837
+min: 20.03500647191487 max: 25.103730214764994
+min: 18.979999542236328 max: 24.8799991607666
+min: 20.1279702145667 max: 24.816605140130633
+RMSE of consense vote = 4.5530
+Accuracy of consense vote = 1.2613
+Completeness of consense vote = 0.2799
+
+L1 Error of consense vote = 2.4578
+
+min: 20.145999991528228 max: 26.24063432474643
+RMSE of median fusion = 4.4353
+Accuracy of median fusion = 1.3120
+Completeness of median fusion = 0.2601
+
+L1 Error of median fusion = 2.5595
+
+min: 20.14986423213755 max: 32.96867779928813
+RMSE of kmedian_fusion vote = 5.6867
+Accuracy of kmedian_fusion vote = 1.3172
+Completeness of kmedian_fusion vote = 0.2579
+
+L1 Error of kmedian_fusion vote = 3.0060
+
+min: 19.76955795288086 max: 25.669118881225586
+RMSE of deep vote = 3.5998
+Accuracy of deep vote = 1.0117
+Completeness of deep vote = 0.4926
+
+L1 Error of deep vote = 2.0436
+
+min: 19.624292373657227 max: 27.581396102905273
+RMSE of deep vote with mean pooling = 4.1908
+Accuracy of deep vote with mean pooling = 0.8908
+L1 Error of deep vote with mean pooling = 0.8908
+Completeness of deep vote with mean pooling = 2.2315
+
+min: 2.704355782829225 max: 40.39904585946351
+min: -12.175623179180548 max: 31.058704811381176
+min: -9.882309091587862 max: 31.30490344390273
+min: 0.112996049458161 max: 31.07376386472024
+min: 17.52126465189324 max: 32.592471747762126
+min: 5.510920035180597 max: 49.74736831208501
+min: 17.18000030517578 max: 26.60999870300293
+min: -0.8985871620384103 max: 29.738204249019063
+RMSE of consense vote = 17.6542
+Accuracy of consense vote = 0.8594
+Completeness of consense vote = 0.5375
+
+L1 Error of consense vote = 7.2538
+
+min: 8.202961366113056 max: 29.41741188731648
+RMSE of median fusion = 11.3749
+Accuracy of median fusion = 1.0233
+Completeness of median fusion = 0.4954
+
+L1 Error of median fusion = 5.1390
+
+min: 16.91757984634023 max: 35.772029085808654
+RMSE of kmedian_fusion vote = 16.1257
+Accuracy of kmedian_fusion vote = 1.0474
+Completeness of kmedian_fusion vote = 0.4915
+
+L1 Error of kmedian_fusion vote = 6.6618
+
+min: 13.592935562133789 max: 27.88319206237793
+RMSE of deep vote = 5.4396
+Accuracy of deep vote = 1.7812
+Completeness of deep vote = 0.3746
+
+L1 Error of deep vote = 3.5111
+
+min: 5.956994533538818 max: 29.495271682739258
+RMSE of deep vote with mean pooling = 10.5835
+Accuracy of deep vote with mean pooling = 2.2357
+L1 Error of deep vote with mean pooling = 2.2357
+Completeness of deep vote with mean pooling = 5.9729
+
+min: 21.743184430514553 max: 30.49471634532241
+min: 21.692271651544917 max: 31.549348110177863
+min: 21.800959579832853 max: 31.520687510756154
+min: 21.712799084062375 max: 31.556766538570322
+min: 21.727479339577258 max: 29.53326876461506
+min: 21.768821652357776 max: 29.53853548085317
+min: 21.31999969482422 max: 29.979999542236328
+min: 21.742405304218664 max: 30.497268188435577
+RMSE of consense vote = 2.8408
+Accuracy of consense vote = 0.5680
+Completeness of consense vote = 0.6594
+
+L1 Error of consense vote = 1.5135
+
+min: 21.783155186179403 max: 30.55351223363541
+RMSE of median fusion = 2.7249
+Accuracy of median fusion = 0.5256
+Completeness of median fusion = 0.6547
+
+L1 Error of median fusion = 1.5141
+
+min: 21.795297202281652 max: 31.726340775688488
+RMSE of kmedian_fusion vote = 3.0639
+Accuracy of kmedian_fusion vote = 0.5277
+Completeness of kmedian_fusion vote = 0.6525
+
+L1 Error of kmedian_fusion vote = 1.6655
+
+min: 21.285951614379883 max: 28.394100189208984
+RMSE of deep vote = 2.4053
+Accuracy of deep vote = 0.3437
+Completeness of deep vote = 0.6884
+
+L1 Error of deep vote = 1.2186
+
+min: 21.33594512939453 max: 29.763404846191406
+RMSE of deep vote with mean pooling = 2.5075
+Accuracy of deep vote with mean pooling = 0.3936
+L1 Error of deep vote with mean pooling = 0.3936
+Completeness of deep vote with mean pooling = 1.3718
+
+min: 19.17165248290015 max: 26.32806801586412
+min: 19.061712553103767 max: 27.23349589512994
+min: 19.03723993975048 max: 26.910319361370057
+min: 19.06109196320176 max: 26.934277263469994
+min: 19.74576318473555 max: 27.150540915240224
+min: 19.73258568129192 max: 26.761802556614082
+min: 18.78999900817871 max: 26.28999900817871
+min: 19.356000666143956 max: 26.43791633941943
+RMSE of consense vote = 3.1401
+Accuracy of consense vote = 0.8661
+Completeness of consense vote = 0.5440
+
+L1 Error of consense vote = 1.8371
+
+min: 19.291167834657244 max: 26.418288773352593
+RMSE of median fusion = 3.0249
+Accuracy of median fusion = 0.9421
+Completeness of median fusion = 0.5161
+
+L1 Error of median fusion = 1.8637
+
+min: 19.292484230943955 max: 27.574335185655706
+RMSE of kmedian_fusion vote = 3.3170
+Accuracy of kmedian_fusion vote = 0.9521
+Completeness of kmedian_fusion vote = 0.5131
+
+L1 Error of kmedian_fusion vote = 2.0200
+
+min: 18.875892639160156 max: 25.029685974121094
+RMSE of deep vote = 2.6076
+Accuracy of deep vote = 0.7884
+Completeness of deep vote = 0.5650
+
+L1 Error of deep vote = 1.5234
+
+min: 18.903501510620117 max: 25.777488708496094
+RMSE of deep vote with mean pooling = 2.8356
+Accuracy of deep vote with mean pooling = 0.9271
+L1 Error of deep vote with mean pooling = 0.9271
+Completeness of deep vote with mean pooling = 1.7530
+
+min: 20.425205555278808 max: 26.961924667004496
+min: 20.24513165811853 max: 26.90719235381888
+min: 20.343380572584767 max: 26.89080704934895
+min: 20.340260423564665 max: 26.893971904025726
+min: 20.30510637536645 max: 27.07733244355768
+min: 20.22919170279056 max: 26.913148836232722
+min: 19.760000228881836 max: 26.619998931884766
+min: 20.355397404552466 max: 26.68325105179361
+RMSE of consense vote = 2.2949
+Accuracy of consense vote = 0.8058
+Completeness of consense vote = 0.5723
+
+L1 Error of consense vote = 1.4814
+
+min: 20.351975531317294 max: 26.762235413926344
+RMSE of median fusion = 2.3149
+Accuracy of median fusion = 0.8553
+Completeness of median fusion = 0.5445
+
+L1 Error of median fusion = 1.5456
+
+min: 20.35308188807297 max: 26.939487403355695
+RMSE of kmedian_fusion vote = 2.4296
+Accuracy of kmedian_fusion vote = 0.8558
+Completeness of kmedian_fusion vote = 0.5442
+
+L1 Error of kmedian_fusion vote = 1.5925
+
+min: 19.80179786682129 max: 25.875534057617188
+RMSE of deep vote = 1.8497
+Accuracy of deep vote = 0.6282
+Completeness of deep vote = 0.6351
+
+L1 Error of deep vote = 1.1335
+
+min: 19.884563446044922 max: 26.130334854125977
+RMSE of deep vote with mean pooling = 2.0811
+Accuracy of deep vote with mean pooling = 0.7382
+L1 Error of deep vote with mean pooling = 0.7382
+Completeness of deep vote with mean pooling = 1.3385
+
+min: 19.391892684934042 max: 32.052836214502655
+min: 19.185928092959024 max: 32.24070371190707
+min: 19.15681761604113 max: 31.433006163917028
+min: 19.131776487454772 max: 31.50441267993301
+min: 19.743762099809544 max: 33.87244336602424
+min: 19.33338665869087 max: 28.14627865701914
+min: 18.329999923706055 max: 27.69999885559082
+min: 19.437736357275398 max: 31.442335691935014
+RMSE of consense vote = 4.8833
+Accuracy of consense vote = 1.5484
+Completeness of consense vote = 0.3304
+
+L1 Error of consense vote = 3.1155
+
+min: 19.349842411776383 max: 30.958512873699267
+RMSE of median fusion = 4.7891
+Accuracy of median fusion = 1.6585
+Completeness of median fusion = 0.3462
+
+L1 Error of median fusion = 3.1422
+
+min: 19.370833817017996 max: 32.915989575015075
+RMSE of kmedian_fusion vote = 5.6762
+Accuracy of kmedian_fusion vote = 1.7387
+Completeness of kmedian_fusion vote = 0.3404
+
+L1 Error of kmedian_fusion vote = 3.6105
+
+min: 18.988452911376953 max: 28.161449432373047
+RMSE of deep vote = 3.6251
+Accuracy of deep vote = 1.2693
+Completeness of deep vote = 0.4347
+
+L1 Error of deep vote = 2.3395
+
+min: 19.033109664916992 max: 29.69490623474121
+RMSE of deep vote with mean pooling = 4.3584
+Accuracy of deep vote with mean pooling = 1.6320
+L1 Error of deep vote with mean pooling = 1.6320
+Completeness of deep vote with mean pooling = 2.8472
+
+min: 19.112165691486247 max: 25.654172384335347
+min: 19.140828168345273 max: 25.906642918800593
+min: 19.132936598189797 max: 25.820230707215767
+min: 19.152918808627874 max: 25.81499151295672
+min: 18.786670828309145 max: 25.363667863181718
+min: 19.052990705085296 max: 25.28050769865513
+min: 18.869998931884766 max: 25.849998474121094
+min: 19.16677620733072 max: 25.594462653576816
+RMSE of consense vote = 2.1355
+Accuracy of consense vote = 0.6364
+Completeness of consense vote = 0.6301
+
+L1 Error of consense vote = 1.2973
+
+min: 19.13844329980961 max: 25.628720187279225
+RMSE of median fusion = 2.1022
+Accuracy of median fusion = 0.6657
+Completeness of median fusion = 0.6058
+
+L1 Error of median fusion = 1.3212
+
+min: 19.140866428776473 max: 25.850829114283744
+RMSE of kmedian_fusion vote = 2.2563
+Accuracy of kmedian_fusion vote = 0.6650
+Completeness of kmedian_fusion vote = 0.6061
+
+L1 Error of kmedian_fusion vote = 1.3648
+
+min: 18.535701751708984 max: 24.491378784179688
+RMSE of deep vote = 1.8857
+Accuracy of deep vote = 0.7830
+Completeness of deep vote = 0.5944
+
+L1 Error of deep vote = 1.2364
+
+min: 18.664098739624023 max: 24.91303253173828
+RMSE of deep vote with mean pooling = 2.0108
+Accuracy of deep vote with mean pooling = 0.8859
+L1 Error of deep vote with mean pooling = 0.8859
+Completeness of deep vote with mean pooling = 1.3819
+
+min: 22.873601975361144 max: 31.07359506014098
+min: 22.678687331732363 max: 31.48218677115316
+min: 22.784613997054596 max: 31.410672928517062
+min: 22.77493590116501 max: 31.431622344534844
+min: 22.717675631400198 max: 30.284522189758718
+min: 22.75543158687651 max: 29.90534858033061
+min: 21.489999771118164 max: 29.3799991607666
+min: 22.738536978764664 max: 30.823743368936597
+RMSE of consense vote = 2.6512
+Accuracy of consense vote = 1.2415
+Completeness of consense vote = 0.1716
+
+L1 Error of consense vote = 1.9059
+
+min: 22.80813617647315 max: 30.820858331940446
+RMSE of median fusion = 2.5857
+Accuracy of median fusion = 1.2714
+Completeness of median fusion = 0.1442
+
+L1 Error of median fusion = 1.9165
+
+min: 22.81466055444131 max: 31.758625730716933
+RMSE of kmedian_fusion vote = 2.8973
+Accuracy of kmedian_fusion vote = 1.2751
+Completeness of kmedian_fusion vote = 0.1415
+
+L1 Error of kmedian_fusion vote = 2.0429
+
+min: 22.277935028076172 max: 29.10102653503418
+RMSE of deep vote = 1.9978
+Accuracy of deep vote = 0.9128
+Completeness of deep vote = 0.6001
+
+L1 Error of deep vote = 1.3404
+
+min: 22.334152221679688 max: 30.054914474487305
+RMSE of deep vote with mean pooling = 2.2042
+Accuracy of deep vote with mean pooling = 0.7992
+L1 Error of deep vote with mean pooling = 0.7992
+Completeness of deep vote with mean pooling = 1.4861
+
+min: 19.873023815658307 max: 23.28445202691517
+min: 19.818135610238336 max: 23.32430950265067
+min: 19.794277415183995 max: 23.337357853422873
+min: 19.8094789609313 max: 23.299215966835618
+min: 20.087852399182296 max: 23.193671422862238
+min: 19.9629783926066 max: 23.116922670742497
+min: 19.270000457763672 max: 22.939998626708984
+min: 19.927322168222236 max: 23.113273655494883
+RMSE of consense vote = 1.5360
+Accuracy of consense vote = 0.7378
+Completeness of consense vote = 0.7245
+
+L1 Error of consense vote = 1.0176
+
+min: 19.888517429370925 max: 23.15873299310139
+RMSE of median fusion = 1.4870
+Accuracy of median fusion = 0.7186
+Completeness of median fusion = 0.7244
+
+L1 Error of median fusion = 1.0111
+
+min: 19.888933902489953 max: 23.18132671795666
+RMSE of kmedian_fusion vote = 1.4467
+Accuracy of kmedian_fusion vote = 0.7186
+Completeness of kmedian_fusion vote = 0.7245
+
+L1 Error of kmedian_fusion vote = 1.0046
+
+min: 19.632841110229492 max: 22.681289672851562
+RMSE of deep vote = 1.3371
+Accuracy of deep vote = 0.4914
+Completeness of deep vote = 0.8205
+
+L1 Error of deep vote = 0.7693
+
+min: 19.391267776489258 max: 22.585493087768555
+RMSE of deep vote with mean pooling = 1.3241
+Accuracy of deep vote with mean pooling = 0.3260
+L1 Error of deep vote with mean pooling = 0.3260
+Completeness of deep vote with mean pooling = 0.6970
+
+min: 20.843210753441475 max: 30.392738309145592
+min: 20.854179269323748 max: 30.36728859040886
+min: 20.91462329006754 max: 30.436045990713563
+min: 20.906206179837078 max: 30.4202416788709
+min: 20.705822246925287 max: 29.968292408001922
+min: 20.699239902198315 max: 29.193613975308836
+min: 20.689998626708984 max: 30.26999855041504
+min: 20.906846295324893 max: 30.215215952868494
+RMSE of consense vote = 1.6420
+Accuracy of consense vote = 0.2652
+Completeness of consense vote = 0.8302
+
+L1 Error of consense vote = 0.7128
+
+min: 20.859434681828134 max: 30.208908837297436
+RMSE of median fusion = 1.6639
+Accuracy of median fusion = 0.2622
+Completeness of median fusion = 0.8072
+
+L1 Error of median fusion = 0.7670
+
+min: 20.86069732836525 max: 30.424942163634114
+RMSE of kmedian_fusion vote = 1.9505
+Accuracy of kmedian_fusion vote = 0.2611
+Completeness of kmedian_fusion vote = 0.8070
+
+L1 Error of kmedian_fusion vote = 0.8524
+
+min: 20.431589126586914 max: 28.951318740844727
+RMSE of deep vote = 1.7668
+Accuracy of deep vote = 0.3550
+Completeness of deep vote = 0.7791
+
+L1 Error of deep vote = 0.8708
+
+not good!
+
+min: 20.340394973754883 max: 29.057090759277344
+RMSE of deep vote with mean pooling = 1.9172
+Accuracy of deep vote with mean pooling = 0.5234
+L1 Error of deep vote with mean pooling = 0.5234
+Completeness of deep vote with mean pooling = 1.0350
+
+min: 20.786081426755032 max: 24.449831405632636
+min: 20.80387489373485 max: 27.562704755106203
+min: 20.746948051887255 max: 26.44738145308061
+min: 20.741835137736054 max: 26.309778212724876
+min: 20.82617453633187 max: 23.75697514236284
+min: 20.699568669311702 max: 24.071674164384604
+min: 20.239999771118164 max: 24.209999084472656
+min: 20.801022417489655 max: 24.128780445697316
+RMSE of consense vote = 2.2746
+Accuracy of consense vote = 0.5419
+Completeness of consense vote = 0.7604
+
+L1 Error of consense vote = 1.1337
+
+min: 20.81398712374115 max: 25.337101192357856
+RMSE of median fusion = 2.2389
+Accuracy of median fusion = 0.5473
+Completeness of median fusion = 0.7489
+
+L1 Error of median fusion = 1.1616
+
+min: 20.81489537896899 max: 28.122094104572934
+RMSE of kmedian_fusion vote = 2.4445
+Accuracy of kmedian_fusion vote = 0.5465
+Completeness of kmedian_fusion vote = 0.7506
+
+L1 Error of kmedian_fusion vote = 1.2214
+
+min: 20.06427574157715 max: 23.847171783447266
+RMSE of deep vote = 2.1016
+Accuracy of deep vote = 0.3419
+Completeness of deep vote = 0.7772
+
+L1 Error of deep vote = 0.9795
+
+min: 20.31690788269043 max: 25.08246421813965
+RMSE of deep vote with mean pooling = 1.9953
+Accuracy of deep vote with mean pooling = 0.2462
+L1 Error of deep vote with mean pooling = 0.2462
+Completeness of deep vote with mean pooling = 0.8960
+
+min: 20.256236679310398 max: 27.730565525981085
+min: 20.24526398535818 max: 31.313372191041708
+min: 20.19203604850918 max: 31.409257441293448
+min: 20.14065615274012 max: 31.354140008489292
+min: 19.939805642856903 max: 26.240171486667045
+min: 19.866421087086202 max: 26.782311618700625
+min: 19.020000457763672 max: 26.549999237060547
+min: 20.236155079809194 max: 30.33964593982511
+RMSE of consense vote = 3.2643
+Accuracy of consense vote = 0.8944
+Completeness of consense vote = 0.5542
+
+L1 Error of consense vote = 1.8887
+
+min: 20.263784662277125 max: 29.059389956490346
+RMSE of median fusion = 3.1682
+Accuracy of median fusion = 0.8764
+Completeness of median fusion = 0.5634
+
+L1 Error of median fusion = 1.9138
+
+min: 20.26392983593978 max: 31.787059790765248
+RMSE of kmedian_fusion vote = 3.5925
+Accuracy of kmedian_fusion vote = 0.8777
+Completeness of kmedian_fusion vote = 0.5624
+
+L1 Error of kmedian_fusion vote = 2.0862
+
+min: 19.903017044067383 max: 26.160202026367188
+RMSE of deep vote = 2.5020
+Accuracy of deep vote = 0.5805
+Completeness of deep vote = 0.6512
+
+L1 Error of deep vote = 1.3964
+
+min: 19.723291397094727 max: 28.008970260620117
+RMSE of deep vote with mean pooling = 2.8107
+Accuracy of deep vote with mean pooling = 0.4943
+L1 Error of deep vote with mean pooling = 0.4943
+Completeness of deep vote with mean pooling = 1.4785
+
+min: 19.305850541219115 max: 26.36620395258069
+min: 19.32030825208252 max: 26.324568950881563
+min: 19.224329521879554 max: 26.580924266017973
+min: 19.195396611234173 max: 26.52279185480438
+min: 19.506710508372635 max: 25.915633127558976
+min: 19.330317532643676 max: 25.234062674455345
+min: 19.020000457763672 max: 26.119998931884766
+min: 19.386253601310848 max: 25.82121713074963
+RMSE of consense vote = 3.2633
+Accuracy of consense vote = 0.4568
+Completeness of consense vote = 0.6975
+
+L1 Error of consense vote = 1.4623
+
+min: 19.38678602039969 max: 25.82544288520391
+RMSE of median fusion = 3.1455
+Accuracy of median fusion = 0.4316
+Completeness of median fusion = 0.6828
+
+L1 Error of median fusion = 1.4723
+
+min: 19.387421273393556 max: 27.04667680442799
+RMSE of kmedian_fusion vote = 3.7371
+Accuracy of kmedian_fusion vote = 0.4320
+Completeness of kmedian_fusion vote = 0.6809
+
+L1 Error of kmedian_fusion vote = 1.6430
+
+min: 18.83559226989746 max: 24.317371368408203
+RMSE of deep vote = 3.0634
+Accuracy of deep vote = 0.4471
+Completeness of deep vote = 0.6836
+
+L1 Error of deep vote = 1.4076
+
+min: 18.881458282470703 max: 25.188005447387695
+RMSE of deep vote with mean pooling = 3.0091
+Accuracy of deep vote with mean pooling = 0.5549
+L1 Error of deep vote with mean pooling = 0.5549
+Completeness of deep vote with mean pooling = 1.5388
+
+min: 19.255411327971768 max: 26.72736005159095
+min: 19.39671641238965 max: 27.098519410084315
+min: 19.49872676538312 max: 27.25926002649599
+min: 19.41143323527649 max: 27.29051024067615
+min: 19.40504427603446 max: 26.463211046298966
+min: 19.386854977812618 max: 26.897615550551564
+min: 19.189998626708984 max: 27.69999885559082
+min: 19.44674518833112 max: 26.863780773916403
+RMSE of consense vote = 3.7726
+Accuracy of consense vote = 0.4933
+Completeness of consense vote = 0.6814
+
+L1 Error of consense vote = 1.7981
+
+min: 19.449426367641472 max: 26.63381264684722
+RMSE of median fusion = 3.6249
+Accuracy of median fusion = 0.4681
+Completeness of median fusion = 0.6837
+
+L1 Error of median fusion = 1.7438
+
+min: 19.44985208862151 max: 27.71861687597047
+RMSE of kmedian_fusion vote = 3.6563
+Accuracy of kmedian_fusion vote = 0.4682
+Completeness of kmedian_fusion vote = 0.6831
+
+L1 Error of kmedian_fusion vote = 1.7799
+
+min: 19.11790657043457 max: 24.354982376098633
+RMSE of deep vote = 3.6655
+Accuracy of deep vote = 0.3201
+Completeness of deep vote = 0.6933
+
+L1 Error of deep vote = 1.6640
+
+min: 18.92928695678711 max: 25.737993240356445
+RMSE of deep vote with mean pooling = 3.4686
+Accuracy of deep vote with mean pooling = 0.4164
+L1 Error of deep vote with mean pooling = 0.4164
+Completeness of deep vote with mean pooling = 1.6665
+
+min: 19.115292197636638 max: 26.460130693468574
+min: 18.950107970274985 max: 26.271707408751052
+min: 18.897625360637903 max: 26.14878119962911
+min: 18.907091288749747 max: 26.18834870952802
+min: 18.92857182239603 max: 26.44253228818487
+min: 18.99964011662329 max: 26.592976982860513
+min: 18.920000076293945 max: 26.8799991607666
+min: 19.08657111678788 max: 26.240942224517237
+RMSE of consense vote = 2.4049
+Accuracy of consense vote = 0.4927
+Completeness of consense vote = 0.6930
+
+L1 Error of consense vote = 1.2596
+
+min: 19.03037720051494 max: 26.063452835331912
+RMSE of median fusion = 2.4395
+Accuracy of median fusion = 0.5121
+Completeness of median fusion = 0.6605
+
+L1 Error of median fusion = 1.3255
+
+min: 19.054640541396413 max: 26.454438000123258
+RMSE of kmedian_fusion vote = 2.3535
+Accuracy of kmedian_fusion vote = 0.5093
+Completeness of kmedian_fusion vote = 0.6634
+
+L1 Error of kmedian_fusion vote = 1.2997
+
+min: 18.50071907043457 max: 25.286073684692383
+RMSE of deep vote = 2.2479
+Accuracy of deep vote = 0.7562
+Completeness of deep vote = 0.6086
+
+L1 Error of deep vote = 1.3401
+
+min: 18.57663917541504 max: 25.41545295715332
+RMSE of deep vote with mean pooling = 2.3351
+Accuracy of deep vote with mean pooling = 0.8034
+L1 Error of deep vote with mean pooling = 0.8034
+Completeness of deep vote with mean pooling = 1.4371
+
+min: 19.873567015708737 max: 24.592166843358427
+min: 19.94677707273513 max: 26.027593539096415
+min: 19.97934837732464 max: 25.98351180708657
+min: 19.971774029235046 max: 25.9151948193321
+min: 19.8332601506263 max: 25.364923152141273
+min: 19.858017970031746 max: 25.414153434491404
+min: 19.059999465942383 max: 25.059999465942383
+min: 20.005620693179434 max: 25.409774880093018
+RMSE of consense vote = 2.2100
+Accuracy of consense vote = 0.4068
+Completeness of consense vote = 0.7403
+
+L1 Error of consense vote = 1.1604
+
+min: 20.040076815057546 max: 25.448032941436395
+RMSE of median fusion = 2.1691
+Accuracy of median fusion = 0.4324
+Completeness of median fusion = 0.7236
+
+L1 Error of median fusion = 1.1973
+
+min: 20.044867085448153 max: 26.1311378874816
+RMSE of kmedian_fusion vote = 2.5606
+Accuracy of kmedian_fusion vote = 0.4318
+Completeness of kmedian_fusion vote = 0.7239
+
+L1 Error of kmedian_fusion vote = 1.3081
+
+min: 19.5130672454834 max: 24.107091903686523
+RMSE of deep vote = 1.7748
+Accuracy of deep vote = 0.2418
+Completeness of deep vote = 0.7321
+
+L1 Error of deep vote = 0.9302
+
+min: 19.56198501586914 max: 24.47467803955078
+RMSE of deep vote with mean pooling = 2.0066
+Accuracy of deep vote with mean pooling = 0.2868
+L1 Error of deep vote with mean pooling = 0.2868
+Completeness of deep vote with mean pooling = 1.0855
+
+min: 18.866938956081867 max: 24.375096787698567
+min: 18.607524179504253 max: 24.7586749374168
+min: 18.63062840141356 max: 24.74008502578363
+min: 18.562090249654524 max: 24.705883576457076
+min: 18.862401146042654 max: 24.56029958517433
+min: 18.701190803945064 max: 23.826178953796624
+min: 18.6299991607666 max: 24.939998626708984
+min: 18.79100817320325 max: 24.248701670877562
+RMSE of consense vote = 2.2687
+Accuracy of consense vote = 0.5512
+Completeness of consense vote = 0.6561
+
+L1 Error of consense vote = 1.3010
+
+min: 18.754026921334052 max: 24.24653334316099
+RMSE of median fusion = 2.1930
+Accuracy of median fusion = 0.5883
+Completeness of median fusion = 0.6240
+
+L1 Error of median fusion = 1.3222
+
+min: 18.756616597723525 max: 24.813812099358376
+RMSE of kmedian_fusion vote = 2.4010
+Accuracy of kmedian_fusion vote = 0.5891
+Completeness of kmedian_fusion vote = 0.6234
+
+L1 Error of kmedian_fusion vote = 1.3957
+
+min: 18.23922348022461 max: 23.270389556884766
+RMSE of deep vote = 2.1423
+Accuracy of deep vote = 0.7339
+Completeness of deep vote = 0.6112
+
+L1 Error of deep vote = 1.3465
+
+min: 18.304216384887695 max: 23.63364601135254
+RMSE of deep vote with mean pooling = 2.2479
+Accuracy of deep vote with mean pooling = 0.8989
+L1 Error of deep vote with mean pooling = 0.8989
+Completeness of deep vote with mean pooling = 1.4983
+
+min: 20.53663404029794 max: 28.24245514650829
+min: 20.93314610980451 max: 28.418261136859655
+min: 20.67079986166209 max: 28.107144156470895
+min: 20.65852650324814 max: 28.11681334123326
+min: 20.739509513490418 max: 27.98930429562978
+min: 20.731163451448083 max: 28.061866520904005
+min: 19.389999389648438 max: 26.889999389648438
+min: 20.80824666275938 max: 28.094064481366566
+RMSE of consense vote = 2.7151
+Accuracy of consense vote = 1.4299
+Completeness of consense vote = 0.2005
+
+L1 Error of consense vote = 2.0460
+
+min: 20.764279422760268 max: 28.023620007199323
+RMSE of median fusion = 2.6921
+Accuracy of median fusion = 1.3944
+Completeness of median fusion = 0.2162
+
+L1 Error of median fusion = 2.0380
+
+min: 20.7699974879312 max: 28.224304004378308
+RMSE of kmedian_fusion vote = 2.8932
+Accuracy of kmedian_fusion vote = 1.3975
+Completeness of kmedian_fusion vote = 0.2150
+
+L1 Error of kmedian_fusion vote = 2.1190
+
+min: 20.319244384765625 max: 27.070762634277344
+RMSE of deep vote = 1.8756
+Accuracy of deep vote = 0.9670
+Completeness of deep vote = 0.5252
+
+L1 Error of deep vote = 1.3627
+
+min: 20.262657165527344 max: 27.35504722595215
+RMSE of deep vote with mean pooling = 2.3172
+Accuracy of deep vote with mean pooling = 0.9754
+L1 Error of deep vote with mean pooling = 0.9754
+Completeness of deep vote with mean pooling = 1.6306
+
+min: 20.464577622081336 max: 26.30690011412203
+min: 20.513447107571018 max: 26.44796197750683
+min: 20.516883690375835 max: 26.385962374663603
+min: 20.347472405061126 max: 26.23269572267309
+min: 20.49295723065734 max: 26.330873811617494
+min: 20.414022185839713 max: 26.135877590626478
+min: 18.889999389648438 max: 25.299999237060547
+min: 20.55990966922283 max: 26.11928857720568
+RMSE of consense vote = 2.7475
+Accuracy of consense vote = 1.5803
+Completeness of consense vote = 0.1680
+
+L1 Error of consense vote = 2.1099
+
+min: 20.515037250384143 max: 26.085290952031887
+RMSE of median fusion = 2.7258
+Accuracy of median fusion = 1.5557
+Completeness of median fusion = 0.1702
+
+L1 Error of median fusion = 2.1272
+
+min: 20.516706485999748 max: 26.35655798832886
+RMSE of kmedian_fusion vote = 2.8696
+Accuracy of kmedian_fusion vote = 1.5576
+Completeness of kmedian_fusion vote = 0.1693
+
+L1 Error of kmedian_fusion vote = 2.1888
+
+min: 20.007179260253906 max: 25.02412986755371
+RMSE of deep vote = 2.1399
+Accuracy of deep vote = 1.1209
+Completeness of deep vote = 0.4106
+
+L1 Error of deep vote = 1.5232
+
+min: 20.055017471313477 max: 25.400259017944336
+RMSE of deep vote with mean pooling = 2.3653
+Accuracy of deep vote with mean pooling = 1.1233
+L1 Error of deep vote with mean pooling = 1.1233
+Completeness of deep vote with mean pooling = 1.7226
+
+min: 18.893349731239347 max: 23.771860428984134
+min: 18.830647647536047 max: 24.294674777157717
+min: 18.831128153018653 max: 24.27456483027587
+min: 18.818438040092587 max: 24.189315110445023
+min: 19.00610319408588 max: 22.588770881993696
+min: 18.81492477795109 max: 23.248156981077045
+min: 18.489999771118164 max: 22.809999465942383
+min: 18.8646487454558 max: 23.25070300210973
+RMSE of consense vote = 2.8264
+Accuracy of consense vote = 0.4851
+Completeness of consense vote = 0.7997
+
+L1 Error of consense vote = 1.1473
+
+min: 18.86840792861767 max: 23.82798195645834
+RMSE of median fusion = 2.7373
+Accuracy of median fusion = 0.5073
+Completeness of median fusion = 0.7856
+
+L1 Error of median fusion = 1.1721
+
+min: 18.87201201892458 max: 24.542883837622362
+RMSE of kmedian_fusion vote = 3.4232
+Accuracy of kmedian_fusion vote = 0.5087
+Completeness of kmedian_fusion vote = 0.7839
+
+L1 Error of kmedian_fusion vote = 1.3658
+
+min: 18.544397354125977 max: 22.934476852416992
+RMSE of deep vote = 2.3171
+Accuracy of deep vote = 0.2759
+Completeness of deep vote = 0.8155
+
+L1 Error of deep vote = 0.9046
+
+min: 18.37841033935547 max: 23.205718994140625
+RMSE of deep vote with mean pooling = 2.6792
+Accuracy of deep vote with mean pooling = 0.2431
+L1 Error of deep vote with mean pooling = 0.2431
+Completeness of deep vote with mean pooling = 1.0352
+
+min: 19.00680533470586 max: 26.010484071448445
+min: 19.122501963051036 max: 26.41788594913669
+min: 19.0175107922405 max: 26.44837985187769
+min: 18.941146783530712 max: 26.264996392652392
+min: 19.125269972525224 max: 25.73634933660893
+min: 19.105310906190425 max: 25.596264210063964
+min: 18.670000076293945 max: 25.737998962402344
+min: 19.109678902304637 max: 25.771662447063413
+RMSE of consense vote = 2.6535
+Accuracy of consense vote = 0.5437
+Completeness of consense vote = 0.6772
+
+L1 Error of consense vote = 1.4279
+
+min: 19.07556992480143 max: 25.840107045136392
+RMSE of median fusion = 2.5435
+Accuracy of median fusion = 0.5143
+Completeness of median fusion = 0.6691
+
+L1 Error of median fusion = 1.4225
+
+min: 19.07685711737334 max: 26.8667703736943
+RMSE of kmedian_fusion vote = 2.7595
+Accuracy of kmedian_fusion vote = 0.5107
+Completeness of kmedian_fusion vote = 0.6714
+
+L1 Error of kmedian_fusion vote = 1.5032
+
+min: 18.64200210571289 max: 24.457611083984375
+RMSE of deep vote = 2.4396
+Accuracy of deep vote = 0.4037
+Completeness of deep vote = 0.6788
+
+L1 Error of deep vote = 1.2459
+
+min: 18.57176971435547 max: 25.146202087402344
+RMSE of deep vote with mean pooling = 2.4253
+Accuracy of deep vote with mean pooling = 0.3821
+L1 Error of deep vote with mean pooling = 0.3821
+Completeness of deep vote with mean pooling = 1.3098
+
+min: 26.20507502090186 max: 39.204959022812545
+min: 26.135306660085917 max: 39.25003048311919
+min: 26.163177425662674 max: 39.30218967795372
+min: 26.134444715455174 max: 39.33301963439832
+min: 26.059125606901944 max: 39.05362329958007
+min: 26.073200488463044 max: 39.24935049191117
+min: 25.689998626708984 max: 38.39999771118164
+min: 26.14042212843235 max: 39.26874761684127
+RMSE of consense vote = 2.7961
+Accuracy of consense vote = 0.5866
+Completeness of consense vote = 0.7146
+
+L1 Error of consense vote = 1.4840
+
+min: 26.159069820772856 max: 39.14088828799625
+RMSE of median fusion = 2.7867
+Accuracy of median fusion = 0.6002
+Completeness of median fusion = 0.6942
+
+L1 Error of median fusion = 1.5528
+
+min: 26.159668909075357 max: 39.367868778295815
+RMSE of kmedian_fusion vote = 3.1993
+Accuracy of kmedian_fusion vote = 0.5980
+Completeness of kmedian_fusion vote = 0.6952
+
+L1 Error of kmedian_fusion vote = 1.7206
+
+min: 25.688419342041016 max: 37.653560638427734
+RMSE of deep vote = 2.2207
+Accuracy of deep vote = 0.4520
+Completeness of deep vote = 0.6629
+
+L1 Error of deep vote = 1.2404
+
+min: 25.665300369262695 max: 38.23235321044922
+RMSE of deep vote with mean pooling = 2.6183
+Accuracy of deep vote with mean pooling = 0.3558
+L1 Error of deep vote with mean pooling = 0.3558
+Completeness of deep vote with mean pooling = 1.4007
+
+min: 19.460261730942875 max: 26.254926077555865
+min: 19.52780474256724 max: 26.664765777687233
+min: 19.487126578576863 max: 26.590511235408485
+min: 19.50328146480024 max: 26.635344360023737
+min: 19.8656335612759 max: 26.896401627454907
+min: 19.59769556624815 max: 26.378243420273066
+min: 19.31999969482422 max: 27.170000076293945
+min: 19.633470629444975 max: 26.621981527351913
+RMSE of consense vote = 2.3862
+Accuracy of consense vote = 0.5451
+Completeness of consense vote = 0.6696
+
+L1 Error of consense vote = 1.3329
+
+min: 19.588145240209997 max: 26.368232996435836
+RMSE of median fusion = 2.4144
+Accuracy of median fusion = 0.5803
+Completeness of median fusion = 0.6298
+
+L1 Error of median fusion = 1.4066
+
+min: 19.59248829772696 max: 26.698992303106934
+RMSE of kmedian_fusion vote = 2.4970
+Accuracy of kmedian_fusion vote = 0.5564
+Completeness of kmedian_fusion vote = 0.6423
+
+L1 Error of kmedian_fusion vote = 1.4091
+
+min: 19.202791213989258 max: 25.57631492614746
+RMSE of deep vote = 2.3485
+Accuracy of deep vote = 0.5959
+Completeness of deep vote = 0.6368
+
+L1 Error of deep vote = 1.3316
+
+min: 19.136796951293945 max: 25.594125747680664
+RMSE of deep vote with mean pooling = 2.5052
+Accuracy of deep vote with mean pooling = 0.7026
+L1 Error of deep vote with mean pooling = 0.7026
+Completeness of deep vote with mean pooling = 1.5121
+
+min: 18.34607466456355 max: 25.308766986152143
+min: 18.09675864689052 max: 27.873980714939535
+min: 18.187683463064623 max: 27.764065790889454
+min: 18.16696622311165 max: 27.780938325869194
+min: 18.419335331457354 max: 25.47353458876411
+min: 18.37973483488895 max: 25.222166266525164
+min: 18.06999969482422 max: 26.10999870300293
+min: 18.336916110980404 max: 25.883106099446657
+RMSE of consense vote = 3.6330
+Accuracy of consense vote = 0.4851
+Completeness of consense vote = 0.6381
+
+L1 Error of consense vote = 1.8509
+
+min: 18.34017294767886 max: 26.156387066225737
+RMSE of median fusion = 3.4923
+Accuracy of median fusion = 0.4767
+Completeness of median fusion = 0.6172
+
+L1 Error of median fusion = 1.8843
+
+min: 18.34744671742229 max: 28.502050419198486
+RMSE of kmedian_fusion vote = 4.0833
+Accuracy of kmedian_fusion vote = 0.4820
+Completeness of kmedian_fusion vote = 0.6128
+
+L1 Error of kmedian_fusion vote = 2.1393
+
+min: 17.924522399902344 max: 24.304285049438477
+RMSE of deep vote = 3.1378
+Accuracy of deep vote = 0.6119
+Completeness of deep vote = 0.6138
+
+L1 Error of deep vote = 1.7183
+
+min: 17.91994285583496 max: 25.301156997680664
+RMSE of deep vote with mean pooling = 3.2429
+Accuracy of deep vote with mean pooling = 0.7395
+L1 Error of deep vote with mean pooling = 0.7395
+Completeness of deep vote with mean pooling = 1.9256
+
+min: 20.743510633707047 max: 27.21721515711397
+min: 20.396590038709277 max: 27.21513487821811
+min: 20.902414880537737 max: 27.64450633417194
+min: 20.86967325365792 max: 27.639816625354193
+min: 20.647937170121807 max: 27.253913747970003
+min: 20.705033593811095 max: 27.19761708471924
+min: 19.059999465942383 max: 26.15999984741211
+min: 20.703516976945266 max: 27.039023849395168
+RMSE of consense vote = 3.3878
+Accuracy of consense vote = 1.6568
+Completeness of consense vote = 0.1652
+
+L1 Error of consense vote = 2.3825
+
+min: 20.812218382434914 max: 27.087870107285646
+RMSE of median fusion = 3.3610
+Accuracy of median fusion = 1.7359
+Completeness of median fusion = 0.1436
+
+L1 Error of median fusion = 2.4743
+
+min: 20.814276073846933 max: 27.540241622831672
+RMSE of kmedian_fusion vote = 3.6245
+Accuracy of kmedian_fusion vote = 1.7409
+Completeness of kmedian_fusion vote = 0.1420
+
+L1 Error of kmedian_fusion vote = 2.5931
+
+min: 20.19963836669922 max: 25.973087310791016
+RMSE of deep vote = 2.8327
+Accuracy of deep vote = 1.2339
+Completeness of deep vote = 0.3565
+
+L1 Error of deep vote = 1.8015
+
+min: 20.368364334106445 max: 26.40803337097168
+RMSE of deep vote with mean pooling = 3.0004
+Accuracy of deep vote with mean pooling = 1.3446
+L1 Error of deep vote with mean pooling = 1.3446
+Completeness of deep vote with mean pooling = 2.0736
+
+min: 18.344620095045023 max: 19.455894536283516
+min: 18.550423600400485 max: 19.662758691857256
+min: 18.573045276105404 max: 19.721246674656868
+min: 18.573755467465766 max: 19.731806913545974
+min: 18.544703513918456 max: 19.22798691277766
+min: 18.602124613011256 max: 19.318907431559637
+min: 18.34000015258789 max: 19.3799991607666
+min: 18.569191527044676 max: 19.471010323243284
+RMSE of consense vote = 0.7604
+Accuracy of consense vote = 0.2935
+Completeness of consense vote = 0.9199
+
+L1 Error of consense vote = 0.4455
+
+min: 18.571318532107398 max: 19.517473593947493
+RMSE of median fusion = 0.7733
+Accuracy of median fusion = 0.2856
+Completeness of median fusion = 0.9017
+
+L1 Error of median fusion = 0.4548
+
+min: 18.571318532107398 max: 19.517991386326354
+RMSE of kmedian_fusion vote = 0.7946
+Accuracy of kmedian_fusion vote = 0.2857
+Completeness of kmedian_fusion vote = 0.9016
+
+L1 Error of kmedian_fusion vote = 0.4581
+
+min: 18.290374755859375 max: 19.180482864379883
+RMSE of deep vote = 0.7309
+Accuracy of deep vote = 0.1839
+Completeness of deep vote = 0.9292
+
+L1 Error of deep vote = 0.3651
+
+min: 18.020132064819336 max: 18.957799911499023
+RMSE of deep vote with mean pooling = 0.8139
+Accuracy of deep vote with mean pooling = 0.3574
+L1 Error of deep vote with mean pooling = 0.3574
+Completeness of deep vote with mean pooling = 0.4865
+
+Final RMSE of consense vote = 3.1409, std = 2.4444
+Final Accuracy of consense vote = 0.7930, std = 0.4144
+Final Completeness of consense vote = 0.5765, std = 0.2118
+Final L1 Error of consense vote = 1.7512, std = 1.0416
+
+Final RMSE of median fusion = 2.9404, std = 1.6897
+Final Accuracy of median fusion = 0.8236, std = 0.4319
+Final Completeness of median fusion = 0.5595, std = 0.2097
+Final L1 Error of median fusion = 1.7324, std = 0.8337
+
+Final RMSE of kmedian_fusion vote = 3.3679, std = 2.3290
+Final Accuracy of kmedian_fusion vote = 0.8280, std = 0.4395
+Final Completeness of kmedian_fusion vote = 0.5588, std = 0.2104
+Final L1 Error of kmedian_fusion vote = 1.8929, std = 1.0464
+
+Final RMSE of deep vote = 2.4830, std = 1.1168
+Final Accuracy of deep vote = 0.7258, std = 0.3768
+Final Completeness of deep vote = 0.6146, std = 0.1522
+Final L1 Error of deep vote = 1.4408, std = 0.6267
+
+Final RMSE of deep vote with mean pooling = 2.7693, std = 1.5607
+Final Accuracy of deep vote with mean pooling = 0.8103, std = 0.4247
+Final Completeness of deep vote with mean pooling = 0.5918, std = 0.1531
+Final L1 Error of deep vote with mean pooling = 1.6566, std = 0.8746
+

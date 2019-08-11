@@ -8,128 +8,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-## 2D convolution layers
-class conv2d(nn.Module):
-    def __init__(self, n_pairs, batch_norm, in_planes, out_planes, kernel_size=3, stride=1):
-        super(conv2d, self).__init__()
-        if batch_norm:
-            self.conv_layer = nn.Sequential(
-                nn.Conv2d(in_planes, out_planes, kernel_size=kernel_size, stride=stride, padding=(kernel_size-1)//2, bias=True),
-                nn.BatchNorm2d(out_planes),
-                nn.LeakyReLU(0.2,inplace=True),
-            )
-        else:
-            self.conv_layer = nn.Sequential(
-                nn.Conv2d(in_planes, out_planes, kernel_size=kernel_size, stride=stride, padding=(kernel_size-1)//2, bias=True),
-                nn.LeakyReLU(0.2,inplace=True),
-            )
-        self.n_pairs = n_pairs
-    def forward(self, x):
-        # print(x.shape)
-        x = x.view(-1, x.size(2), x.size(3), x.size(4))
-        x_conv = self.conv_layer(x)
-        # print(x_conv.shape)
-        x_conv = x_conv.view(-1, self.n_pairs, x_conv.size(1), x_conv.size(2), x_conv.size(3))
-        return x_conv
-
-class PermEqui_mean(nn.Module):
-  def __init__(self, n_pairs, in_dim, out_dim):
-    super(PermEqui_mean, self).__init__()
-    self.n_pairs = n_pairs
-    self.Gamma = conv2d(n_pairs, batch_norm=False, in_planes=in_dim, out_planes=out_dim, kernel_size=5)
-    # self.Lambda = conv2d(n_pairs, batch_norm=False, in_planes=in_dim, out_planes=out_dim, kernel_size=5)
-
-  def forward(self, x):
-    xm = x.mean(1, keepdim=True).repeat(1, self.n_pairs, 1, 1, 1)
-    # xm = self.Lambda.forward(xm)
-    # x = self.Gamma.forward(x)
-    x = self.Gamma.forward(x-xm)
-    # x = x - xm
-    return x
-
-class PermEqui_median(nn.Module):
-  def __init__(self, n_pairs, in_dim, out_dim):
-    super(PermEqui_median, self).__init__()
-    self.n_pairs = n_pairs
-    self.Gamma = conv2d(n_pairs, batch_norm=False, in_planes=in_dim, out_planes=out_dim, kernel_size=5)
-    # self.Lambda = conv2d(n_pairs, batch_norm=False, in_planes=in_dim, out_planes=out_dim, kernel_size=5)
-
-  def forward(self, x):
-    xm = x.median(1, keepdim=True)[0].repeat(1, self.n_pairs, 1, 1, 1)
-    # xm = self.Lambda.forward(xm)
-    # x = self.Gamma.forward(x)
-    x = self.Gamma.forward(x-xm)
-    # x = x - xm
-    return x
-
-class PermEqui_max(nn.Module):
-  def __init__(self, n_pairs, in_dim, out_dim):
-    super(PermEqui_max, self).__init__()
-    self.n_pairs = n_pairs
-    self.Gamma = conv2d(n_pairs, batch_norm=False, in_planes=in_dim, out_planes=out_dim, kernel_size=5)
-    # self.Lambda = conv2d(n_pairs, batch_norm=False, in_planes=in_dim, out_planes=out_dim, kernel_size=5)
-
-  def forward(self, x):
-    xm = x.max(1, keepdim=True)[0].repeat(1, self.n_pairs, 1, 1, 1)
-    # xm = self.Lambda.forward(xm)
-    # x = self.Gamma.forward(x)
-    x = self.Gamma.forward(x-xm)
-    # x = x - xm
-    return x
-
-
-
-class MMMerge_mean(nn.Module):
-    """docstring for MMMerge_mean"""
-    def __init__(self, n_pairs):
-        super(MMMerge_mean, self).__init__()
-        self.model = nn.Sequential(
-            PermEqui_mean(n_pairs, in_dim=2, out_dim=8,),
-            PermEqui_mean(n_pairs, in_dim=8, out_dim=16,),
-            PermEqui_mean(n_pairs, in_dim=16, out_dim=8,),
-            PermEqui_mean(n_pairs, in_dim=8, out_dim=1,), 
-        )
-    def forward(self, img):
-        return self.model(img).squeeze_().mean(1)
-
-class MMMerge_median(nn.Module):
-    """docstring for MMMerge_median"""
-    def __init__(self, n_pairs):
-        super(MMMerge_median, self).__init__()
-        self.model = nn.Sequential(
-            PermEqui_median(n_pairs, in_dim=2, out_dim=8,),
-            PermEqui_median(n_pairs, in_dim=8, out_dim=16,),
-            PermEqui_median(n_pairs, in_dim=16, out_dim=8,),
-            PermEqui_median(n_pairs, in_dim=8, out_dim=1,), 
-        )
-    def forward(self, img):
-        return self.model(img).squeeze_().median(1)[0]
-
-class MMMerge_max(nn.Module):
-    """docstring for MMMerge_max"""
-    def __init__(self, n_pairs):
-        super(MMMerge_max, self).__init__()
-        self.model = nn.Sequential(
-            PermEqui_max(n_pairs, in_dim=2, out_dim=8,),
-            PermEqui_max(n_pairs, in_dim=8, out_dim=16,),
-            PermEqui_max(n_pairs, in_dim=16, out_dim=8,),
-            PermEqui_max(n_pairs, in_dim=8, out_dim=1,), 
-        )
-    def forward(self, img):
-        return self.model(img).squeeze_().max(1)[0]
-
-class MMMerge(nn.Module):
-    """docstring for MMMerge"""
-    def __init__(self, n_pairs):
-        super(MMMerge, self).__init__()
-        self.model = nn.Sequential(
-            conv2d(n_pairs, batch_norm=False, in_planes=2, out_planes=8, kernel_size=5),
-            conv2d(n_pairs, batch_norm=False, in_planes=8, out_planes=16, kernel_size=5),
-            conv2d(n_pairs, batch_norm=False, in_planes=16, out_planes=8, kernel_size=5),
-            conv2d(n_pairs, batch_norm=False, in_planes=8, out_planes=1, kernel_size=5), # predict the height for each pixel
-        )
-    def forward(self, img):
-        return self.model(img).squeeze_().mean(1)
+from model_util import *
 
 # load input sets and ground truth
 def load_data(gt_path, data_path, n_pair=6):
@@ -149,6 +28,44 @@ def load_data(gt_path, data_path, n_pair=6):
     mask = np.isnan(AllX)
     AllX[mask] = 0
     return AllX, Ally, filenames
+
+def evaluate_epoch(args, gt_path, data_path):
+    batch_size = args.batch_size
+    D = MMMerge(args.n_pair).cuda()
+    AllX = []
+    Ally = []
+    input_temp = 'FF-%d.npy'
+    input_img_temp = '%d-color.png'
+    filenames = np.array(os.listdir(data_path))
+    n_total = len(filenames)
+    print('number of data: %d'%n_total)
+    fold_size = n_total//args.n_folds
+    shuffled_index = np.arange(n_total)
+    np.random.seed(2019)
+    np.random.shuffle(shuffled_index)
+    test_ids = shuffled_index[list(range(0*fold_size, 1*fold_size))]
+    n_test_batch = test_ids.shape[0]//batch_size
+    filenames = filenames[test_ids]
+    # N x P x W x H x 2
+    for filename in filenames:
+        file_tmp = np.load(os.path.join(data_path, filename, 'trainX.npy'))
+        height_gt = np.load(os.path.join(gt_path, filename+'.npy'))
+        AllX.append(file_tmp)
+        Ally.append(height_gt)
+
+    X_all, y_all = np.array(AllX), np.array(Ally)
+
+    for i in range(4):
+        D.load_state_dict(torch.load(os.path.join(args.output, 'models', 'fold0_%d'%(i*100+99))))
+        for k in range(n_test_batch):
+            X = Variable(torch.cuda.FloatTensor(X_all[k*batch_size:(k+1)*batch_size]), requires_grad=False)
+            Y = Variable(torch.cuda.FloatTensor(y_all[k*batch_size:(k+1)*batch_size]), requires_grad=False)
+            pred_height = D(X)
+            output = pred_height.cpu().data.numpy()
+            # import ipdb;ipdb.set_trace()
+            for hm, fn in zip(output, filenames[k*batch_size:(k+1)*batch_size]):
+                np.save(os.path.join(os.path.join(args.output, 'test_epochs'), fn+'_%d.npy'%(i*100+99)), hm)
+            del X, Y, pred_height, output
 
 def evaluate(args, gt_path, data_path):
     D = MMMerge(args.n_pair).cuda()
@@ -202,4 +119,5 @@ if __name__ == '__main__':
     os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu_id
     data_path = '/home/songweig/LockheedMartin/data/MVS'
     gt_path = '/home/songweig/LockheedMartin/data/DSM'
-    evaluate(args, gt_path, data_path)
+    evaluate_epoch(args, gt_path, data_path)
+    # evaluate(args, gt_path, data_path)
