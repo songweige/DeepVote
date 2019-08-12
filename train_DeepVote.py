@@ -6,7 +6,7 @@ import numpy as np
 from scipy import misc
 
 from data_util import *
-from model_util import *
+from model_util import get_network
 
 class Trainer(object):
     """docstring for Trainer"""
@@ -80,13 +80,13 @@ class Trainer(object):
                     del X,Y,pred_height,loss
                 
                 if (j+1)%100 == 0:
-                    torch.save(self.D.state_dict(), os.path.join('../results', self.args.output, 'models', 'fold%d_%d'%(i, j)))
+                    torch.save(self.D.state_dict(), os.path.join('../results', self.args.exp_name, 'models', 'fold%d_%d'%(i, j)))
                 print("Fold %d, Epochs %d, time = %ds, training loss: %f"%(i, j, time.time() - begin, np.mean(train_epoch_loss)))
             
             # save the last training estimation
             if self.args.save_train:
                 output = (pred_height.cpu().data.numpy())
-                save_height(self.args.output, output, filenames[train_batch_ids], 'train')
+                save_height(self.args.exp_name, output, filenames[train_batch_ids], 'train')
             # test
             for k in range(n_test_batch+1):
                 if k == n_test_batch:
@@ -100,7 +100,7 @@ class Trainer(object):
                 loss_val = loss.data.cpu().numpy()
                 test_epoch_loss.append(loss_val)
                 output = (pred_height.cpu().data.numpy())
-                save_height(self.args.output, output, filenames[test_batch_ids], 'test')
+                save_height(self.args.exp_name, output, filenames[test_batch_ids], 'test')
                 del X,Y,pred_height,loss
             print("Fold %d, Epochs %d, time = %ds, training loss: %f, test loss %f"%(i, j, time.time() - begin, np.mean(train_epoch_loss), np.mean(test_epoch_loss)))
 
@@ -111,7 +111,7 @@ class Trainer(object):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("-o", "--output", type=str, default='../results', help='Save results filepath')
+    parser.add_argument('-n', '--exp_name', type=str, default='plain', help='the name to identify current experiment')
     parser.add_argument("-ie", "--input_epoch", type=str, default=None, help='Load model after n epochs')
     parser.add_argument("-i", "--input", type=str, default='fold0', help='Load model filepath')
     parser.add_argument("-ld", "--load_model", type=bool, default=False, help='Load pretrained model or not')
@@ -127,11 +127,11 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    if not os.path.exists(os.path.join('../results', args.output, 'models')):
-        os.mkdir(os.path.join('../results', args.output))
-        os.mkdir(os.path.join('../results', args.output, 'models'))
-        os.mkdir(os.path.join('../results', args.output, 'reconstruction_train'))
-        os.mkdir(os.path.join('../results', args.output, 'reconstruction_test'))
+    if not os.path.exists(os.path.join('../results', args.exp_name, 'models')):
+        os.mkdir(os.path.join('../results', args.exp_name))
+        os.mkdir(os.path.join('../results', args.exp_name, 'models'))
+        os.mkdir(os.path.join('../results', args.exp_name, 'reconstruction_train'))
+        os.mkdir(os.path.join('../results', args.exp_name, 'reconstruction_test'))
 
     os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu_id
     data_path = '/home/songweig/LockheedMartin/data/MVS'
@@ -141,5 +141,5 @@ if __name__ == '__main__':
     # X[:, :, 0, :, :] = X[:, :, 0, :, :]/255.
     trainer = Trainer(args, X, y, filenames)
     if args.load_model:
-        trainer.D.load_state_dict(torch.load(os.path.join(args.output, 'models', '%s_%d'%(args.input, args.input_epoch))))
+        trainer.D.load_state_dict(torch.load(os.path.join(args.exp_name, 'models', '%s_%d'%(args.input, args.input_epoch))))
     trainer.run()

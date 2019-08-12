@@ -1,7 +1,10 @@
+"""
+Model Utils
+"""
+
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
-
 
 ## 2D convolution layers
 class conv2d(nn.Module):
@@ -100,9 +103,9 @@ class DeepVote_mean(nn.Module):
         self.residual = residual
     def forward(self, img):
         if self.residual:
-            return self.model(img).squeeze_().mean(1) + img[:, :, 1, :, :].mean(1)
+            return self.model(img).squeeze_(2).mean(1) + img[:, :, 1, :, :].mean(1)
         else:
-            return self.model(img).squeeze_().mean(1)
+            return self.model(img).squeeze_(2).mean(1)
 
 class DeepVote_mean2(nn.Module):
     """docstring for DeepVote_mean2"""
@@ -117,9 +120,9 @@ class DeepVote_mean2(nn.Module):
         self.residual = residual
     def forward(self, img):
         if self.residual:
-            return self.model(img).squeeze_().mean(1) + img[:, :, 1, :, :].mean(1)
+            return self.model(img).squeeze_(2).mean(1) + img[:, :, 1, :, :].mean(1)
         else:
-            return self.model(img).squeeze_().mean(1)
+            return self.model(img).squeeze_(2).mean(1)
 
 class DeepVote_median(nn.Module):
     """docstring for DeepVote_median"""
@@ -134,9 +137,9 @@ class DeepVote_median(nn.Module):
         self.residual = residual
     def forward(self, img):
         if self.residual:
-            return self.model(img).squeeze_().median(1)[0] + img[:, :, 1, :, :].median(1)
+            return self.model(img).squeeze_(2).median(1)[0] + img[:, :, 1, :, :].median(1)
         else:
-            return self.model(img).squeeze_().median(1)[0]
+            return self.model(img).squeeze_(2).median(1)[0]
 
 class DeepVote_max(nn.Module):
     """docstring for DeepVote_max"""
@@ -151,9 +154,9 @@ class DeepVote_max(nn.Module):
         self.residual = residual
     def forward(self, img):
         if self.residual:
-            return self.model(img).squeeze_().max(1)[0] + img[:, :, 1, :, :].mean(1)
+            return self.model(img).squeeze_(2).max(1)[0] + img[:, :, 1, :, :].mean(1)
         else:
-            return self.model(img).squeeze_().max(1)[0]
+            return self.model(img).squeeze_(2).max(1)[0]
 
 class DeepVote_large(nn.Module):
     """docstring for DeepVote_large"""
@@ -168,9 +171,9 @@ class DeepVote_large(nn.Module):
         self.residual = residual
     def forward(self, img):
         if self.residual:
-            return self.model(img).squeeze_().mean(1) + img[:, :, 1, :, :].mean(1)
+            return self.model(img).squeeze_(2).mean(1) + img[:, :, 1, :, :].mean(1)
         else:
-            return self.model(img).squeeze_().mean(1)
+            return self.model(img).squeeze_(2).mean(1)
 
 class DeepVote_weighted(nn.Module):
     """docstring for DeepVote_weighted"""
@@ -188,9 +191,9 @@ class DeepVote_weighted(nn.Module):
         preds = self.model(img)
         preds = nn.functional.softmax(preds[:, :, 0, :, :], 1)*preds[:, :, 1, :, :]
         if self.residual:
-            return preds.squeeze_().sum(1) + img[:, :, 1, :, :].mean(1)
+            return preds.squeeze_(2).sum(1) + img[:, :, 1, :, :].mean(1)
         else:
-            return preds.squeeze_().sum(1)
+            return preds.squeeze_(2).sum(1)
 
 
 class DeepVote(nn.Module):
@@ -206,9 +209,9 @@ class DeepVote(nn.Module):
         self.residual = residual
     def forward(self, img):
         if self.residual:
-            return self.model(img).squeeze_().mean(1) + img[:, :, 1, :, :].mean(1)
+            return self.model(img).squeeze_(2).mean(1) + img[:, :, 1, :, :].mean(1)
         else:
-            return self.model(img).squeeze_().mean(1)
+            return self.model(img).squeeze_(2).mean(1)
 
 
 nets_map = {

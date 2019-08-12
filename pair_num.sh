@@ -1,0 +1,10 @@
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 1
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 2
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 3
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 4
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 5
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 6
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 7
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 9
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 8
+python infer.py -g 1 -o ../results/ -m base -r True -if 0 -ie 399 -n plain_res -i /home/songweig/LockheedMartin/data/MVS/dem_6_18 -np 10
