@@ -13,43 +13,6 @@ from torch.autograd import Variable
 from data_util import load_folder
 from model_util import get_network
 
-def infer_height2(args, gt_path, data_path):
-    batch_size = args.batch_size
-    AllX = []
-    Ally = []
-    input_temp = 'FF-%d.npy'
-    input_img_temp = '%d-color.png'
-    filenames = np.array(os.listdir(data_path))
-    n_total = len(filenames)
-    print('number of data: %d'%n_total)
-    fold_size = n_total//args.n_folds
-    shuffled_index = np.arange(n_total)
-    np.random.seed(2019)
-    np.random.shuffle(shuffled_index)
-    test_ids = shuffled_index[list(range(0*fold_size, 1*fold_size))]
-    n_test_batch = test_ids.shape[0]//batch_size
-    filenames = filenames[test_ids]
-    # N x P x W x H x 2
-    for filename in filenames:
-        file_tmp = np.load(os.path.join(data_path, filename, 'trainX.npy'))
-        height_gt = np.load(os.path.join(gt_path, filename+'.npy'))
-        AllX.append(file_tmp)
-        Ally.append(height_gt)
-
-    X_all, y_all = np.array(AllX), np.array(Ally)
-
-    for i in range(4):
-        
-        for k in range(n_test_batch):
-            X = Variable(torch.cuda.FloatTensor(X_all[k*batch_size:(k+1)*batch_size]), requires_grad=False)
-            Y = Variable(torch.cuda.FloatTensor(y_all[k*batch_size:(k+1)*batch_size]), requires_grad=False)
-            pred_height = D(X)
-            output = pred_height.cpu().data.numpy()
-            # import ipdb;ipdb.set_trace()
-            for hm, fn in zip(output, filenames[k*batch_size:(k+1)*batch_size]):
-                np.save(os.path.join(os.path.join(args.output, 'test_epochs'), fn+'_%d.npy'%(i*100+99)), hm)
-            del X, Y, pred_height, output
-
 
 def infer_height(D, x):
     # import ipdb;ipdb.set_trace()

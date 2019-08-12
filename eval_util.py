@@ -52,3 +52,10 @@ def completeness(inh, gth):
     input_h, gt_h, count = fill(inh, gth, completeness=True)
     cpm_count = np.sum(np.abs(input_h[truth_mask]-gt_h[truth_mask])<1).astype(np.float)
     return cpm_count/count
+
+def evaluate(input_data, gt_data):
+    rsme_metric = RSME(input_data, gt_data)
+    acc_metric = accuracy(input_data, gt_data)
+    com_metric = completeness(input_data, gt_data)
+    l1e_metric = L1E(input_data, gt_data)
+    return rsme_metric, acc_metric, com_metric, l1e_metric
