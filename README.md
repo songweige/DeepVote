@@ -19,4 +19,4 @@ operation is employed in the end to calculate the final rectification. The final
 the average of the input height maps. Each convolutional block includes several convolutional permutation equivalence layers with leakyReLU 
 activation function and BatchNorm layers.
 
-![Network Architecture](image/model.pdf)
+![Network Architecture](image/model.jpg)
