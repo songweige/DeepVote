@@ -24,8 +24,8 @@ def load_data(gt_path, data_path, n_pair=6, input_height_temp='FF-%d.npy', input
     begin_time = time.time()
     print('start to load data')
     for filename in filenames:
-        input_imgs, height_gt = load_folder(data_path=os.path.join(data_path, filename), gt_path=os.path.join(gt_path, filename+'.npy', n_pair=6, 
-                    mode='train', input_height_temp='FF-%d.npy', input_img_temp='%d-color.png'))
+        input_imgs, height_gt = load_folder(data_path=os.path.join(data_path, filename), gt_path=os.path.join(gt_path, filename+'.npy'), n_pair=6, 
+                    mode='train', input_height_temp='FF-%d.npy', input_img_temp='%d-color.png')
         AllX.append(input_imgs)
         Ally.append(height_gt)
     AllX, Ally, filenames = np.array(AllX), np.array(Ally), np.array(filenames)
@@ -43,6 +43,8 @@ def load_folder(data_path, gt_path=None, n_pair=6, mode='train', input_height_te
     file_tmp = []
     for i in range(n_pair):
         height = np.load(os.path.join(data_path, input_height_temp%i))
+        mask = np.isnan(height)
+        height[mask] = 0
         img = misc.imread(os.path.join(data_path, input_img_temp%i))
         file_tmp.append(np.dstack((img, height)).transpose(2, 0, 1))
         if mode == 'train':

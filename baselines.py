@@ -1,17 +1,21 @@
 import os
 import numpy as np
-import matplotlib.pyplot as plt
 import imageio as misc
 from shutil import copyfile
 
 import eval_util
+
+def partial_median(x):
+    k = x.shape[0]//2
+    med = np.median(x[:k][x[k:].astype(bool)])
+    return med
 
 n_pair = 6
 save_fig = False
 mode = 'test'
 input_temp = 'FF-%d.npy'
 input_img_temp = '%d-color.png'
-result_path = '../results/eval_res_fold0_%s'%mode
+result_path = '../results/eval_all_%s'%mode
 data_path = '../data/'
 input_path = '/home/songweig/LockheedMartin/data/MVS'
 gt_path = '/home/songweig/LockheedMartin/data/DSM'
@@ -22,9 +26,10 @@ dv_mean2_path = '/home/songweig/LockheedMartin/CDSAlign/results/mean2/reconstruc
 dv_large_path = '/home/songweig/LockheedMartin/CDSAlign/results/large/reconstruction_%s'%mode
 dv_weighted_path = '/home/songweig/LockheedMartin/CDSAlign/results/weighted/reconstruction_%s'%mode
 
+if not os.path.exists(result_path):
+    os.mkdir(result_path)
 
-fire_palette = misc.imread(os.path.join(data_path, 'fire_palette.png'))[0][:, 0:3]
-confidence_palette = misc.imread(os.path.join(data_path, 'confidence_palette.png'))[0][:, 0:3]
+fire_palette = misc.imread(os.path.join('image/fire_palette.png'))[0][:, 0:3]
 
 consense_scores = []
 median_fusion_scores = []
@@ -36,7 +41,7 @@ dv_mean2_scores = []
 dv_large_scores = []
 dv_weighted_scores = []
 
-filenames = [fn[:-4] for fn in os.listdir(dv_large_path)]
+filenames = [fn[:-4] for fn in os.listdir(dv_path)]
 print('Number of test data: %d'%len(filenames))
 for filename in filenames:
     out_path = os.path.join(result_path, filename)
@@ -45,7 +50,7 @@ for filename in filenames:
     for i in range(n_pair):
         height = np.load(os.path.join(input_path, filename, input_temp%i))
         if save_fig:
-            color_map = getColorMapFromPalette(height, fire_palette)
+            color_map = eval_util.getColorMapFromPalette(height, fire_palette)
             misc.imsave(out_path+'_input_height%d.png'%i, color_map)
             copyfile(os.path.join(input_path, filename, input_img_temp%i), out_path+'_input_color%d.png'%i)
         pair_data.append(height)
@@ -54,13 +59,13 @@ for filename in filenames:
     # load gt
     gt_data = np.load(os.path.join(gt_path, filename+'.npy'))
     if save_fig:
-        color_map = getColorMapFromPalette(gt_data, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(gt_data, fire_palette)
         misc.imsave(out_path+'_gt_data.png', color_map)
 
     # consense vote
     con_data = np.load(os.path.join(input_path, filename, 'test.npz'))['f_infos'][:, :, 1]
     if save_fig:
-        color_map = getColorMapFromPalette(con_data, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(con_data, fire_palette)
         misc.imsave(out_path+'_consense.png', color_map)
     metrics = eval_util.evaluate(con_data, gt_data)
     consense_scores.append(metrics)
@@ -70,16 +75,17 @@ for filename in filenames:
     # mean fusion
     mean_data = np.mean(pair_data, 0)
     if save_fig:
-        color_map = getColorMapFromPalette(mean_data, fire_palette)
-        misc.imsave(out_path+'_consense.png', color_map)
+        color_map = eval_util.getColorMapFromPalette(mean_data, fire_palette)
+        misc.imsave(out_path+'_mean.png', color_map)
     metrics = eval_util.evaluate(mean_data, gt_data)
     mean_fusion_scores.append(metrics)
     print('RMSE, Accuracy, Completeness, L1 Error of mean fusion: %.4f,  %.4f,  %.4f,  %.4f'%(
             metrics[0], metrics[1], metrics[2], metrics[3]))
 
+    # median fusion
     median_fusion = np.median(pair_data, 0)
     if save_fig:
-        color_map = getColorMapFromPalette(median_fusion, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(median_fusion, fire_palette)
         misc.imsave(out_path+'_median_fusion.png', color_map)
     metrics = eval_util.evaluate(median_fusion, gt_data)
     median_fusion_scores.append(metrics)
@@ -87,6 +93,7 @@ for filename in filenames:
             metrics[0], metrics[1], metrics[2], metrics[3]))
 
     # k-medians pair_data: n x w x h
+    kmedian_fusion = median_fusion
     max_map = np.max(pair_data, 0, keepdims=True)
     min_map = np.min(pair_data, 0, keepdims=True)
     dis_max_map = np.abs(pair_data-max_map)
@@ -96,17 +103,11 @@ for filename in filenames:
     max_set_count = np.sum(max_set, 0)
     min_set_count = np.sum(min_set, 0)
 
-    kmedian_fusion = median_fusion
-    for i in range(median_fusion.shape[0]):
-        for j in range(median_fusion.shape[1]):
-            if max_set_count[i, j] > 1 and min_set_count[i, j] > 1:
-                max_set_median = np.median(pair_data[:, i, j][max_set[:, i, j]])
-                min_set_median = np.median(pair_data[:, i, j][min_set[:, i, j]])
-                dis = max_set_median - min_set_median
-                if dis > 5.:
-                    kmedian_fusion[i, j] = max_set_median
+    bi_modal_ids = np.logical_and((max_map[0]-min_map[0])>5, max_set_count>1, min_set_count>1)
+    max_modal_data = np.vstack((pair_data, max_set)).reshape(n_pair*2, -1)
+    kmedian_fusion[bi_modal_ids] = np.apply_along_axis(partial_median, 0, max_modal_data[:, bi_modal_ids.reshape(-1)])
     if save_fig:
-        color_map = getColorMapFromPalette(kmedian_fusion, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(kmedian_fusion, fire_palette)
         misc.imsave(out_path+'_kmedian_fusion.png', color_map)
     metrics = eval_util.evaluate(kmedian_fusion, gt_data)
     kmedian_fusion_scores.append(metrics)
@@ -116,7 +117,7 @@ for filename in filenames:
     # deep vote
     dv_data = np.load(os.path.join(dv_path, filename+'.npy'))
     if save_fig:
-        color_map = getColorMapFromPalette(dv_data, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(dv_data, fire_palette)
         misc.imsave(out_path+'_dv.png', color_map)
     metrics = eval_util.evaluate(dv_data, gt_data)
     dv_scores.append(metrics)
@@ -126,7 +127,7 @@ for filename in filenames:
     # deep vote with mean pooling
     dv_mean_data = np.load(os.path.join(dv_mean_path, filename+'.npy'))
     if save_fig:
-        color_map = getColorMapFromPalette(dv_mean_data, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(dv_mean_data, fire_palette)
         misc.imsave(out_path+'_dv_mean.png', color_map)
     metrics = eval_util.evaluate(dv_mean_data, gt_data)
     dv_mean_scores.append(metrics)
@@ -136,7 +137,7 @@ for filename in filenames:
     # deep vote with mean2 pooling
     dv_mean2_data = np.load(os.path.join(dv_mean2_path, filename+'.npy'))
     if save_fig:
-        color_map = getColorMapFromPalette(dv_mean2_data, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(dv_mean2_data, fire_palette)
         misc.imsave(out_path+'_dv_mean2.png', color_map)
     metrics = eval_util.evaluate(dv_mean2_data, gt_data)
     dv_mean2_scores.append(metrics)
@@ -146,7 +147,7 @@ for filename in filenames:
     # large deep vote
     dv_large_data = np.load(os.path.join(dv_large_path, filename+'.npy'))
     if save_fig:
-        color_map = getColorMapFromPalette(dv_large_data, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(dv_large_data, fire_palette)
         misc.imsave(out_path+'_dv_large.png', color_map)
     metrics = eval_util.evaluate(dv_mean_data, gt_data)
     dv_large_scores.append(metrics)
@@ -156,7 +157,7 @@ for filename in filenames:
     # weighted deep vote
     dv_weighted_data = np.load(os.path.join(dv_weighted_path, filename+'.npy'))
     if save_fig:
-        color_map = getColorMapFromPalette(dv_weighted_data, fire_palette)
+        color_map = eval_util.getColorMapFromPalette(dv_weighted_data, fire_palette)
         misc.imsave(out_path+'_dv_weighted.png', color_map)
     metrics = eval_util.evaluate(dv_mean_data, gt_data)
     dv_weighted_scores.append(metrics)

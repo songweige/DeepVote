@@ -5,7 +5,11 @@ import argparse
 import numpy as np
 from scipy import misc
 
-from data_util import *
+import torch
+import torch.nn as nn
+from torch.autograd import Variable
+
+import data_util
 from model_util import get_network
 
 class Trainer(object):
@@ -46,10 +50,11 @@ class Trainer(object):
         fold_size = self.n_total//self.n_folds
         # 5 cross validation
         print('start training')
-        for i in range(1, 5):
+        for i in range(1):
         # for i in range(self.n_folds):
             test_ids = self.shuffled_index[list(range(i*fold_size, (i+1)*fold_size))]
-            train_ids = np.setdiff1d(self.shuffled_index, test_ids)
+            train_ids = self.shuffled_index
+            # train_ids = np.setdiff1d(self.shuffled_index, test_ids)
             # import ipdb;ipdb.set_trace()
             n_batch = train_ids.shape[0]//self.batch_size
             n_test_batch = test_ids.shape[0]//self.batch_size
@@ -86,7 +91,7 @@ class Trainer(object):
             # save the last training estimation
             if self.args.save_train:
                 output = (pred_height.cpu().data.numpy())
-                save_height(self.args.exp_name, output, filenames[train_batch_ids], 'train')
+                data_util.save_height(self.args.exp_name, output, filenames[train_batch_ids], 'train')
             # test
             for k in range(n_test_batch+1):
                 if k == n_test_batch:
@@ -100,7 +105,7 @@ class Trainer(object):
                 loss_val = loss.data.cpu().numpy()
                 test_epoch_loss.append(loss_val)
                 output = (pred_height.cpu().data.numpy())
-                save_height(self.args.exp_name, output, filenames[test_batch_ids], 'test')
+                data_util.save_height(self.args.exp_name, output, filenames[test_batch_ids], 'test')
                 del X,Y,pred_height,loss
             print("Fold %d, Epochs %d, time = %ds, training loss: %f, test loss %f"%(i, j, time.time() - begin, np.mean(train_epoch_loss), np.mean(test_epoch_loss)))
 
@@ -113,7 +118,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', '--exp_name', type=str, default='plain', help='the name to identify current experiment')
     parser.add_argument("-ie", "--input_epoch", type=str, default=None, help='Load model after n epochs')
-    parser.add_argument("-i", "--input", type=str, default='fold0', help='Load model filepath')
+    parser.add_argument("-ip", "--input_fold", type=str, default='0', help='Load model filepath')
     parser.add_argument("-ld", "--load_model", type=bool, default=False, help='Load pretrained model or not')
     parser.add_argument('-e', '--epochs', type=int, default=400, help='How many epochs to run in total?')
     parser.add_argument('-b', '--batch_size', type=int, default=5, help='Batch size during training per GPU')
@@ -122,7 +127,7 @@ if __name__ == '__main__':
     parser.add_argument('-nf', '--n_folds', type=int, default=5, help='number of pair to be loaded')
     parser.add_argument('-g', '--gpu_id', type=str, default='0', help='gpuid used for trianing')
     parser.add_argument('-m', '--model', type=str, default='plain', help='which model to be used')
-    parser.add_argument('-r', '--residual', type=bool, default=False, help='use residual learning or not')
+    parser.add_argument('-r', '--residual', type=bool, default=True, help='use residual learning or not')
     parser.add_argument('--save_train', type=bool, default=False, help='save the reconstruction results for training data')
 
     args = parser.parse_args()
@@ -136,10 +141,8 @@ if __name__ == '__main__':
     os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu_id
     data_path = '/home/songweig/LockheedMartin/data/MVS'
     gt_path = '/home/songweig/LockheedMartin/data/DSM'
-    X, y, filenames = load_data(gt_path, data_path, args.n_pair)
-    # import ipdb;ipdb.set_trace()
-    # X[:, :, 0, :, :] = X[:, :, 0, :, :]/255.
+    X, y, filenames = data_util.load_data(gt_path, data_path, args.n_pair)
     trainer = Trainer(args, X, y, filenames)
     if args.load_model:
-        trainer.D.load_state_dict(torch.load(os.path.join(args.exp_name, 'models', '%s_%d'%(args.input, args.input_epoch))))
+        trainer.D.load_state_dict(torch.load(os.path.join('../results', args.exp_name, 'models', '%s_%d'%(args.input_fold, args.input_epoch))))
     trainer.run()

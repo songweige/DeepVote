@@ -1,0 +1,90 @@
+saving results to ../results/plain_res/reconstruction...
+('min:', 19.76241683959961, 'max:', 26.611488342285156)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.8921
+RMSE of estimation = 2.7409
+Accuracy of estimation = 1.2006
+Completeness of estimation = 0.4028
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 19.97208023071289, 'max:', 26.19416618347168)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.7198
+RMSE of estimation = 2.4222
+Accuracy of estimation = 1.1527
+Completeness of estimation = 0.4279
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 19.93645477294922, 'max:', 26.15521240234375)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.6846
+RMSE of estimation = 2.3762
+Accuracy of estimation = 1.1266
+Completeness of estimation = 0.4407
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 19.90013885498047, 'max:', 26.188936233520508)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.6797
+RMSE of estimation = 2.3749
+Accuracy of estimation = 1.1155
+Completeness of estimation = 0.4460
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 20.006229400634766, 'max:', 25.821401596069336)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.6266
+RMSE of estimation = 2.2675
+Accuracy of estimation = 1.1128
+Completeness of estimation = 0.4409
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 20.0792293548584, 'max:', 25.59906578063965)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.5923
+RMSE of estimation = 2.1963
+Accuracy of estimation = 1.1145
+Completeness of estimation = 0.4356
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 20.079618453979492, 'max:', 25.591276168823242)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.5953
+RMSE of estimation = 2.1960
+Accuracy of estimation = 1.1104
+Completeness of estimation = 0.4413
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 20.098987579345703, 'max:', 25.50269889831543)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.5790
+RMSE of estimation = 2.1711
+Accuracy of estimation = 1.1056
+Completeness of estimation = 0.4441
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 20.0920467376709, 'max:', 25.57318115234375)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.5805
+RMSE of estimation = 2.1754
+Accuracy of estimation = 1.1028
+Completeness of estimation = 0.4472
+
+saving results to ../results/plain_res/reconstruction...
+('min:', 20.10120391845703, 'max:', 25.54932975769043)
+('min:', 19.279998779296875, 'max:', 26.28999900817871)
+('min:', 0, 'max:', 10)
+L1 Error of estimation = 1.5815
+RMSE of estimation = 2.1745
+Accuracy of estimation = 1.1087
+Completeness of estimation = 0.4438
+
