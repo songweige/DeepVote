@@ -10,8 +10,8 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-from data_util import load_folder
-from model_util import get_network
+from utils.data_util import load_folder
+from utils.model_util import get_network
 
 
 def infer_height(D, x):

@@ -4,7 +4,7 @@ import numpy as np
 # from scipy import misc
 import imageio as misc
 
-import eval_util
+import utils.eval_util
 
 def plot_diff(input_path, gt_path):
     result_path = os.path.join(os.path.dirname(input_path), os.path.basename(input_path).replace('npy', 'png'))

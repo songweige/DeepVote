@@ -9,8 +9,8 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-import data_util
-from model_util import get_network
+import utils.data_util
+from utils.model_util import get_network
 
 class Trainer(object):
     """docstring for Trainer"""

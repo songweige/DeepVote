@@ -3,7 +3,7 @@ import numpy as np
 import imageio as misc
 from shutil import copyfile
 
-import eval_util
+import utils.eval_util
 
 def partial_median(x):
     k = x.shape[0]//2
