@@ -1,16 +1,14 @@
 import os
-import cv2
 import time
 import argparse
 import numpy as np
-from scipy import misc
 
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-import utils.data_util
-from utils.model_util import get_network
+import data_util
+from model_util import get_network
 
 class Trainer(object):
     """docstring for Trainer"""
@@ -40,6 +38,17 @@ class Trainer(object):
         except:
             m.data.normal_(0, 0.01)
 
+    def data_split(self, fold_id):
+        fold_size = self.n_total//self.n_folds
+        if self.n_folds > 1:
+            test_ids = self.shuffled_index[list(range(i*fold_size, (i+1)*fold_size))]
+            # train_ids = self.shuffled_index
+            train_ids = np.setdiff1d(self.shuffled_index, test_ids)
+        else: # split according to the geographical locations
+            # import ipdb;ipdb.set_trace()
+            test_ids = [i for i, filename in enumerate(filenames) if int(filename.split('_')[2]) <= 8]
+            train_ids = np.setdiff1d(self.shuffled_index, test_ids)
+
 
     def run(self):
         self.D.train()
@@ -50,12 +59,9 @@ class Trainer(object):
         fold_size = self.n_total//self.n_folds
         # 5 cross validation
         print('start training')
-        for i in range(1):
-        # for i in range(self.n_folds):
-            test_ids = self.shuffled_index[list(range(i*fold_size, (i+1)*fold_size))]
-            train_ids = self.shuffled_index
-            # train_ids = np.setdiff1d(self.shuffled_index, test_ids)
-            # import ipdb;ipdb.set_trace()
+        # for i in range(1):
+        for i in range(self.n_folds):
+            train_ids, test_ids = self.data_split(i)
             n_batch = train_ids.shape[0]//self.batch_size
             n_test_batch = test_ids.shape[0]//self.batch_size
             for p in self.D.parameters():
@@ -116,7 +122,7 @@ class Trainer(object):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-n', '--exp_name', type=str, default='plain', help='the name to identify current experiment')
+    parser.add_argument('-n', '--exp_name', type=str, default='base', help='the name to identify current experiment')
     parser.add_argument("-ie", "--input_epoch", type=str, default=None, help='Load model after n epochs')
     parser.add_argument("-ip", "--input_fold", type=str, default='0', help='Load model filepath')
     parser.add_argument("-ld", "--load_model", type=bool, default=False, help='Load pretrained model or not')
@@ -126,23 +132,24 @@ if __name__ == '__main__':
     parser.add_argument('-np', '--n_pair', type=int, default=6, help='number of pair to be loaded')
     parser.add_argument('-nf', '--n_folds', type=int, default=5, help='number of pair to be loaded')
     parser.add_argument('-g', '--gpu_id', type=str, default='0', help='gpuid used for trianing')
-    parser.add_argument('-m', '--model', type=str, default='plain', help='which model to be used')
+    parser.add_argument('-m', '--model', type=str, default='base', help='which model to be used')
     parser.add_argument('-r', '--residual', type=bool, default=True, help='use residual learning or not')
     parser.add_argument('--save_train', type=bool, default=False, help='save the reconstruction results for training data')
 
     args = parser.parse_args()
 
-    if not os.path.exists(os.path.join('../results', args.exp_name, 'models')):
-        os.mkdir(os.path.join('../results', args.exp_name))
-        os.mkdir(os.path.join('../results', args.exp_name, 'models'))
-        os.mkdir(os.path.join('../results', args.exp_name, 'reconstruction_train'))
-        os.mkdir(os.path.join('../results', args.exp_name, 'reconstruction_test'))
+    result_path = '../results%d'%args.n_folds
+    if not os.path.exists(os.path.join(result_path, args.exp_name, 'models')):
+        os.mkdir(os.path.join(result_path, args.exp_name))
+        os.mkdir(os.path.join(result_path, args.exp_name, 'models'))
+        os.mkdir(os.path.join(result_path, args.exp_name, 'reconstruction_train'))
+        os.mkdir(os.path.join(result_path, args.exp_name, 'reconstruction_test'))
 
     os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu_id
-    data_path = '/home/songweig/LockheedMartin/data/MVS'
-    gt_path = '/home/songweig/LockheedMartin/data/DSM'
+    data_path = '../data/MVS'
+    gt_path = '../data/DSM'
     X, y, filenames = data_util.load_data(gt_path, data_path, args.n_pair)
     trainer = Trainer(args, X, y, filenames)
     if args.load_model:
-        trainer.D.load_state_dict(torch.load(os.path.join('../results', args.exp_name, 'models', '%s_%d'%(args.input_fold, args.input_epoch))))
+        trainer.D.load_state_dict(torch.load(os.path.join(result_path, args.exp_name, 'models', '%s_%d'%(args.input_fold, args.input_epoch))))
     trainer.run()

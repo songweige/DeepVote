@@ -5,7 +5,7 @@ Data  Utils.
 import os
 import time
 import numpy as np
-from scipy import misc
+import imageio as misc
 
 def save_height(outpath, hms, fns, mode):
     # hms: N x length x length

@@ -23,12 +23,12 @@ def infer_height(D, x):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input", type=str, default='/home/songweig/LockheedMartin/data/MVS', help='input file folder')
-    parser.add_argument("-mn", "--model_name", type=int, default='fold0_399', help='the name of pretrained model')
+    parser.add_argument("-mn", "--model_name", type=str, default='fold0_399', help='the name of pretrained model')
     parser.add_argument('-b', '--batch_size', type=int, default=1, help='Batch size during training per GPU')
     parser.add_argument('-np', '--n_pair', type=int, default=6, help='number of pair to be loaded')
     parser.add_argument('-g', '--gpu_id', type=str, default='0', help='gpuid used for trianing')
-    parser.add_argument('-m', '--model', type=str, default='plain', help='which model to be used')
-    parser.add_argument('-n', '--exp_name', type=str, default='plain', help='the name to identify current experiment')
+    parser.add_argument('-m', '--model', type=str, default='base', help='which model to be used')
+    parser.add_argument('-n', '--exp_name', type=str, default='base', help='the name to identify current experiment')
     parser.add_argument('-r', '--residual', type=bool, default=True, help='use residual learning or not')
 
     args = parser.parse_args()
@@ -40,6 +40,7 @@ if __name__ == '__main__':
 
     print('loading the trained models...')
     D = get_network(args.model)(n_pairs=args.n_pair, residual=args.residual).cuda()
+    print(os.path.join('../results', args.exp_name, 'models', args.model_name))
     D.load_state_dict(torch.load(os.path.join('../results', args.exp_name, 'models', args.model_name)))
 
     print('loading the data...')
